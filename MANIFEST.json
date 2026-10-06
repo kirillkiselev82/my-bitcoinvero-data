@@ -1,0 +1,274 @@
+{
+  "schema": "bitcoinvero-dataset-manifest-v1",
+  "dataset": "BitcoinVero UTXO daily metrics",
+  "version": "1",
+  "created_utc": "2026-10-06",
+  "range": {
+    "start_date": "2009-01-03",
+    "end_date": "2020-02-16",
+    "days": 4062,
+    "end_height": 617698,
+    "end_block_hash": "000000000000000000095ad21001856998971c4951123d14276b5f13c45e83d8"
+  },
+  "core_aggregate_checks": [
+    {
+      "height": 617698,
+      "status": "AGGREGATES_MATCH"
+    },
+    {
+      "height": 663917,
+      "status": "AGGREGATES_MATCH"
+    }
+  ],
+  "full_set_match_claimed": false,
+  "packaging_revision": "onchain-only-1",
+  "release_kind": "historical-onchain-data-with-verification-evidence",
+  "series_count": 16,
+  "daily_boundary_heights_available": false,
+  "terminal_utc_day_complete_claimed": false,
+  "external_independent_audit_claimed": false,
+  "primary_evidence": {
+    "metrics_manifest": "evidence/original/utxo_metrics_v4_manifest.json",
+    "project_audit_617698": "evidence/original/audit_v51_5_3_617698_20260915T093950Z_e30ff9c5.json",
+    "project_audit_663917": "evidence/original/audit_v51_5_4_663917_20260929T074432Z_a1088393.json",
+    "chain_guard_617698": "evidence/original/audit_v51_5_4_core_chain_617698_OK_20260915T120604Z_816c4806.json"
+  },
+  "metrics_code": {
+    "recorded_version": "utxo_metrics_v4-r4-v50-r12.9-prod",
+    "expected_sha256": "1bbed0fcbbd0872a127e3ad99c1a5a326340d071f08d8eda632557317dc04dc1",
+    "exact_file_included": false,
+    "immutable_revision": null,
+    "byte_exact_reproduction_status": "NOT_ESTABLISHED",
+    "details": "evidence/CODE_IDENTITY.md"
+  },
+  "rpc_provenance": {
+    "source": "operator-supplied terminal responses; packaged JSON transcription",
+    "reported_capture_date": "2026-10-06",
+    "observed_client_version": "31.1.0",
+    "running_daemon_version_at_capture": null,
+    "direct_rpc_byte_capture": false,
+    "details": "evidence/core-rpc/COMMAND.txt"
+  },
+  "price_data": {
+    "source_observations_included": false,
+    "price_derived_series_included": false,
+    "historical_identity_metadata": "price/PRICE_SOURCE.json",
+    "acquisition_provenance_verified": false,
+    "notice": "price/NOTICE.md"
+  },
+  "licences": {
+    "project_controlled_data_and_materials": "CC-BY-4.0; scope and exclusions in LICENSE-DATA.md",
+    "bitcoinvero_source_code": "not included; BitcoinVero Educational Use License 1.2",
+    "unbundled_coin_metrics_data": "no rights granted by this package"
+  },
+  "files": [
+    {
+      "path": "LICENSE-DATA.md",
+      "sha256": "6f876036858efebc4164326430bf4b085a28d9da154eaa7b667e96defae8d4d9",
+      "bytes": 2221
+    },
+    {
+      "path": "README.md",
+      "sha256": "d88d82cddc0e05f6ea5909311f35c3f5ba72692e7965e17e26a87618b37bc976",
+      "bytes": 15140
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "sha256": "1aa807b2df86940e2df008602db20c56943180449f2d012ae67072df99de11bf",
+      "bytes": 2304
+    },
+    {
+      "path": "data/onchain/utxo_cdd.csv",
+      "sha256": "6c23f35be4f25d9adc8de291284604f86b20d0c20c180649597c6db3e2a92a63",
+      "bytes": 115470,
+      "rows": 4062
+    },
+    {
+      "path": "data/onchain/utxo_closed_btc.csv",
+      "sha256": "2359be092337b78d1921673919759caad58ea813c1e714a54e97c11ca25e9fc3",
+      "bytes": 104672,
+      "rows": 4062
+    },
+    {
+      "path": "data/onchain/utxo_created_btc.csv",
+      "sha256": "d76414eb8bc3e5d4501a07534d9f8aa28c773f3e4d48d06fb01709d35d146cb0",
+      "bytes": 105592,
+      "rows": 4062
+    },
+    {
+      "path": "data/onchain/utxo_dormancy.csv",
+      "sha256": "23a6be8ed446eef5cea108f20437123c00c8e98f11d952ece4fc76b2a0f2d657",
+      "bytes": 114824,
+      "rows": 4062
+    },
+    {
+      "path": "data/onchain/utxo_hodl_0_1d.csv",
+      "sha256": "3b5d13002f7271a16e17ab5965381f672d37d7bcd476fffa6d99cf329241246a",
+      "bytes": 128799,
+      "rows": 4062
+    },
+    {
+      "path": "data/onchain/utxo_hodl_1d_1w.csv",
+      "sha256": "1d02503b4f23fabfddc784bfe48bb4865701f68ca766f7019b8dd5ad9fd7da99",
+      "bytes": 127037,
+      "rows": 4062
+    },
+    {
+      "path": "data/onchain/utxo_hodl_1m_3m.csv",
+      "sha256": "2474838a92cedaba337c51ae32e6bd31271d739ae16392d8a6efb694057c0e44",
+      "bytes": 124354,
+      "rows": 4062
+    },
+    {
+      "path": "data/onchain/utxo_hodl_1w_1m.csv",
+      "sha256": "fd7547a34aa0672c2362f31b15c9e239e570d68c879d5c817e6e3ca9d78d1151",
+      "bytes": 125386,
+      "rows": 4062
+    },
+    {
+      "path": "data/onchain/utxo_hodl_1y_2y.csv",
+      "sha256": "0b91f0f00631e106c6343afa5435242f4df4ead36462f99c7f02357dd97f6a40",
+      "bytes": 118717,
+      "rows": 4062
+    },
+    {
+      "path": "data/onchain/utxo_hodl_2y_plus.csv",
+      "sha256": "501e85ee78b9391a4f2b15392f24c28ba9a2f52bae727dd1ac4278abcc1c5bb3",
+      "bytes": 112408,
+      "rows": 4062
+    },
+    {
+      "path": "data/onchain/utxo_hodl_3m_6m.csv",
+      "sha256": "95e6d9118125649ae9bbc7aac93c010bcf2a906cf53f3af34341885b0d71cfaa",
+      "bytes": 123423,
+      "rows": 4062
+    },
+    {
+      "path": "data/onchain/utxo_hodl_6m_1y.csv",
+      "sha256": "2afb405f404514676812d890c27ece37a594d8790b4507753fdbdf3b8369cd90",
+      "bytes": 121758,
+      "rows": 4062
+    },
+    {
+      "path": "data/onchain/utxo_live_utxo_count.csv",
+      "sha256": "f93aae4fb96125df798b8f5d11dd82d02916bdf3db0e8f0bbfaebb5e6725bbd6",
+      "bytes": 85579,
+      "rows": 4062
+    },
+    {
+      "path": "data/onchain/utxo_raw_inputs.csv",
+      "sha256": "cc8d7c01921f999dd3dac0b4561efda9863b93f00998474059a1a1a8f06207d5",
+      "bytes": 77337,
+      "rows": 4062
+    },
+    {
+      "path": "data/onchain/utxo_spent_btc.csv",
+      "sha256": "655a1a613dd41a55c8c73a5ad56ec4c16ee4c5954f7bb0f03889f628071a9efd",
+      "bytes": 104672,
+      "rows": 4062
+    },
+    {
+      "path": "data/onchain/utxo_supply_btc.csv",
+      "sha256": "6b7e1511dcef8f5889aca8ba9184782e208f7de0e69188d2939dadf51a1d7529",
+      "bytes": 109960,
+      "rows": 4062
+    },
+    {
+      "path": "data/onchain_daily.csv",
+      "sha256": "e8dae3aa663bec46f8848a8bc09c7ded1d2e35bb8a8cf649d653a0ff91882ee9",
+      "bytes": 1133743,
+      "rows": 4062
+    },
+    {
+      "path": "evidence/CODE_IDENTITY.md",
+      "sha256": "1f15e6501f686cb31e2a1fc58c97d34c2fdd535549ab484ab400b3f270fc9fd0",
+      "bytes": 1783
+    },
+    {
+      "path": "evidence/context/audit_v51_5_2_FATAL_20260915T052915Z_8f98a364.json",
+      "sha256": "bc54ba11de668d015c7104b0ab2364cbfd38d18fbdc2f2d0b96366d0a6f485f4",
+      "bytes": 874825
+    },
+    {
+      "path": "evidence/core-rpc/COMMAND.txt",
+      "sha256": "4601257b649376f2bb2c579a4c1046be57ed5e5e91cebf0d14b66958eee6e1e3",
+      "bytes": 1809
+    },
+    {
+      "path": "evidence/core-rpc/core_617698.json",
+      "sha256": "59df77d53bb30b5835d1bf97c53bd252113f9b9afb3ea200e761519d16b93604",
+      "bytes": 635
+    },
+    {
+      "path": "evidence/core-rpc/core_663917.json",
+      "sha256": "4f708028221f0144a45e309e8640dab0c3ff93ec661da025934d5c55de5f6ca9",
+      "bytes": 636
+    },
+    {
+      "path": "evidence/original/audit_v51_5_3_617698_20260915T093950Z_e30ff9c5.json",
+      "sha256": "f04487b2479b9a3147eddfb5a1d04652e825fd8176fc2a8956c4b9d27a54b37c",
+      "bytes": 877121
+    },
+    {
+      "path": "evidence/original/audit_v51_5_3_617698_20260915T093950Z_e30ff9c5.json.sha256",
+      "sha256": "ce1c67fc4b9fbd699b0c27fe0b4792e1dd7d3e28388a538df931aa8a3773cea5",
+      "bytes": 118
+    },
+    {
+      "path": "evidence/original/audit_v51_5_3_617698_20260915T093950Z_e30ff9c5.md",
+      "sha256": "1ea5dfc50bd776b3f3d40c05adc469c9f4759323dfa80ed7cc7353fa2f724f9f",
+      "bytes": 1606
+    },
+    {
+      "path": "evidence/original/audit_v51_5_3_617698_20260915T093950Z_e30ff9c5.md.sha256",
+      "sha256": "546da4fd85f26a3163664864a31444956339e914140d07d0f4158a87c8367542",
+      "bytes": 116
+    },
+    {
+      "path": "evidence/original/audit_v51_5_4_663917_20260929T074432Z_a1088393.json",
+      "sha256": "05155f8fb5d228555c91cd2cd0cb85d45224806803afedf854da2e32c1c1aa7f",
+      "bytes": 943032
+    },
+    {
+      "path": "evidence/original/audit_v51_5_4_663917_20260929T074432Z_a1088393.json.sha256",
+      "sha256": "59903e5cfcef929a1b65d2e72a6906b35a025d396ebb5da70092b6360e5ed058",
+      "bytes": 118
+    },
+    {
+      "path": "evidence/original/audit_v51_5_4_663917_20260929T074432Z_a1088393.md",
+      "sha256": "c6a8768f5e002d151b385fe416ef347cb0c7879f5adffe4f42bbeb805dfe7b1e",
+      "bytes": 1647
+    },
+    {
+      "path": "evidence/original/audit_v51_5_4_663917_20260929T074432Z_a1088393.md.sha256",
+      "sha256": "ee5d8193b7c510bf34f025d618cbd569558f5b4dc293a49c2675cc930621a8fc",
+      "bytes": 116
+    },
+    {
+      "path": "evidence/original/audit_v51_5_4_core_chain_617698_OK_20260915T120604Z_816c4806.json",
+      "sha256": "7f04d9baf0b975d5be7db63216ee993621f5de767c00f7b8a18b61710fafb99c",
+      "bytes": 1842
+    },
+    {
+      "path": "evidence/original/utxo_metrics_v4_manifest.json",
+      "sha256": "4b8d4a145527179270158e5522b7fbba2096f17f3b602b9e286cea976da178bf",
+      "bytes": 13581
+    },
+    {
+      "path": "node_checkpoints.csv",
+      "sha256": "b8e53f71f4afc3a1663cb169b9f5d2dcbf1b2be2519468a31f099f5923540058",
+      "bytes": 1191,
+      "rows": 2
+    },
+    {
+      "path": "price/NOTICE.md",
+      "sha256": "a2051853f0aea3e4c0bcc862b175d141d4d8a4e8d990a744272dcf6d86d3994e",
+      "bytes": 1730
+    },
+    {
+      "path": "price/PRICE_SOURCE.json",
+      "sha256": "f19bb83188b9842402812aa35753f07a287b133d152e8c868345a23c9771170c",
+      "bytes": 868
+    }
+  ]
+}

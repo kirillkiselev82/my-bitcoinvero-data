@@ -1,0 +1,328 @@
+{
+  "calculator_contract": {
+    "dense_core": {
+      "binary_sha256": "e88fdcd74345964673451fe49914507a80898692fad3b012490cb3d5ae2caac5",
+      "id": "v50-dense-core-r11-buffered-script-append",
+      "path": "/opt/mybot_data/etl/utxo_v50/runtime/utxo_v50_dense_core",
+      "source_sha256": "cb689d72992419378568d11617c8203115a7af8105adaf6dcdfbf5e972211dbf",
+      "state_binary_binding": true
+    },
+    "r11_driver": {
+      "embedded_byte_identical": true,
+      "path": "/root/mybot/utxo_pipeline_v50.py",
+      "sha256": "c735fb8cc7a63d992f0dbb4ce56cd9b4745304711d71f05b7a8db9390bc6911f",
+      "version": "v50-dense-r11-buffered-script-append-singlefile-prod"
+    },
+    "status": "GREEN",
+    "supervisor": {
+      "path": "/root/mybot/utxo_pipeline_v50_r12_9.py",
+      "sha256": "572f382257c797d1475a27f7e08388da120c5f88eaf00de7673608150cc8b19e",
+      "version": "v50-dense-r12.9-certified-r11-supervisor-provenance-prod"
+    }
+  },
+  "calendar": {
+    "block_timestamp_causality_clamped_closes": 1169,
+    "days": 4062,
+    "end": "2020-02-16",
+    "start": "2009-01-03"
+  },
+  "core_chain_guard": {
+    "auditor_sha256": "2a8b601961affd78efc90b3cc9c6042e29565a2de765d5c94edadf94f9f30d39",
+    "chain_digest_sha256": "c342443fffabd2acbe0d62e399339bf432acd24353a06cc2e13c32a739b26f2c",
+    "created_utc": "2026-09-15T12:06:04.335709+00:00",
+    "heights_checked": 617699,
+    "path": "/opt/mybot_data/etl/utxo_v50/audit/audit_v51_5_4_core_chain_617698_OK_20260915T120604Z_816c4806.json",
+    "sha256": "7f04d9baf0b975d5be7db63216ee993621f5de767c00f7b8a18b61710fafb99c"
+  },
+  "counts": {
+    "bip30_overwrites": 2,
+    "closes": 1231151129,
+    "eligible_outputs_created": 1296570387,
+    "ineligible_outputs_created": 41386277,
+    "normal_spends": 1231151127,
+    "outputs": 1337956664,
+    "terminal_live_count": 65419258,
+    "terminal_live_value_sats": 1822105482121089
+  },
+  "created_utc": "2026-09-15T13:57:29Z",
+  "dense_state_validation": {
+    "out_frontier": 1337956664,
+    "status": "GREEN",
+    "terminal_height": 617698,
+    "tx_count": 503813853
+  },
+  "elapsed_sec": 1215.391,
+  "independent_state_audit_evidence": {
+    "all_outputs_sha256": "582dabf946e74028b3e3e05c7c7b159accd01052cb088d723e319ae39c3dab68",
+    "auditor_sha256": "934639d464d715dad6f77903761875e26766cd57148c6f6b2ca175b4c4b0f5a4",
+    "close_stream_sha256": "5e53d4cf7899e8b880d2a877ec928aaee186987873ccbd9003cdd05e7b2689d7",
+    "full_stream_hashes": true,
+    "original_failed_phase": "reference_v40",
+    "path": "/opt/mybot_data/etl/utxo_v50/audit/audit_v51_5_2_FATAL_20260915T052915Z_8f98a364.json",
+    "sha256": "bc54ba11de668d015c7104b0ab2364cbfd38d18fbdc2f2d0b96366d0a6f485f4",
+    "stage_expected_live_fingerprint_sha256": "574f34c61c3736a128788a8324b32faac90db3f780df8998e305f8389e9a7489",
+    "state_live_fingerprint_sha256": "574f34c61c3736a128788a8324b32faac90db3f780df8998e305f8389e9a7489",
+    "status": "GREEN_HEAVY_PROOF_REUSED",
+    "target_height": 617698,
+    "tx_stream_sha256": "7b2d17131211f9bbe01ed73c265e1c07c34cc5cdc333bb5c981e7026afe0ce0b"
+  },
+  "locks": {
+    "R11 driver": {
+      "path": "/opt/mybot_data/etl/utxo_v50/.v50-driver.lock",
+      "shared_lock_held": true
+    },
+    "R12 supervisor": {
+      "path": "/opt/mybot_data/etl/utxo_v50/.v50-r12-supervisor.lock",
+      "shared_lock_held": true
+    },
+    "V50 state": {
+      "path": "/opt/mybot_data/etl/utxo_v50/state/LOCK",
+      "shared_lock_held": true
+    }
+  },
+  "manifest_payload_sha256": "3132c9bc4e8fffda7e844f5e05c99e6d8c654f4fdc2b5b170f418444e2cdfc1a",
+  "metrics_code_sha256": "1bbed0fcbbd0872a127e3ad99c1a5a326340d071f08d8eda632557317dc04dc1",
+  "outputs": {
+    "utxo_asopr": {
+      "path": "/root/mybot/data/onchain_v4/utxo_asopr.csv",
+      "rows": 4062,
+      "sha256": "d1af97aa1fe0252aaae837942446d987713a25c28eaccdedf411dc34a39fc5f1",
+      "size": 111093
+    },
+    "utxo_asopr_coverage_cnt": {
+      "path": "/root/mybot/data/onchain_v4/utxo_asopr_coverage_cnt.csv",
+      "rows": 4062,
+      "sha256": "2a4522144c700cb103f74f619c71f6cab92ec7076c7f7df122f1000b8aad4cac",
+      "size": 76409
+    },
+    "utxo_asopr_coverage_rate": {
+      "path": "/root/mybot/data/onchain_v4/utxo_asopr_coverage_rate.csv",
+      "rows": 4062,
+      "sha256": "5cbdd3eae048db319ad0f2de57caf433f269d8b749f5673a40820813bbefdcf2",
+      "size": 112369
+    },
+    "utxo_cap_mrkt_cur_usd": {
+      "path": "/root/mybot/data/onchain_v4/utxo_cap_mrkt_cur_usd.csv",
+      "rows": 4062,
+      "sha256": "8e3a89700f04b34d0444026c7e1b8239642de3e7f4a2e0f02217c6e236b5906c",
+      "size": 108606
+    },
+    "utxo_cap_real_usd": {
+      "path": "/root/mybot/data/onchain_v4/utxo_cap_real_usd.csv",
+      "rows": 4062,
+      "sha256": "3ecf70554e214ac5ebd387ed084bbe33910822aa24b9c1ecd111f5525c4547bb",
+      "size": 110527
+    },
+    "utxo_cdd": {
+      "path": "/root/mybot/data/onchain_v4/utxo_cdd.csv",
+      "rows": 4062,
+      "sha256": "6c23f35be4f25d9adc8de291284604f86b20d0c20c180649597c6db3e2a92a63",
+      "size": 115470
+    },
+    "utxo_closed_btc": {
+      "path": "/root/mybot/data/onchain_v4/utxo_closed_btc.csv",
+      "rows": 4062,
+      "sha256": "2359be092337b78d1921673919759caad58ea813c1e714a54e97c11ca25e9fc3",
+      "size": 104672
+    },
+    "utxo_created_btc": {
+      "path": "/root/mybot/data/onchain_v4/utxo_created_btc.csv",
+      "rows": 4062,
+      "sha256": "d76414eb8bc3e5d4501a07534d9f8aa28c773f3e4d48d06fb01709d35d146cb0",
+      "size": 105592
+    },
+    "utxo_dormancy": {
+      "path": "/root/mybot/data/onchain_v4/utxo_dormancy.csv",
+      "rows": 4062,
+      "sha256": "23a6be8ed446eef5cea108f20437123c00c8e98f11d952ece4fc76b2a0f2d657",
+      "size": 114824
+    },
+    "utxo_hodl_0_1d": {
+      "path": "/root/mybot/data/onchain_v4/utxo_hodl_0_1d.csv",
+      "rows": 4062,
+      "sha256": "3b5d13002f7271a16e17ab5965381f672d37d7bcd476fffa6d99cf329241246a",
+      "size": 128799
+    },
+    "utxo_hodl_1d_1w": {
+      "path": "/root/mybot/data/onchain_v4/utxo_hodl_1d_1w.csv",
+      "rows": 4062,
+      "sha256": "1d02503b4f23fabfddc784bfe48bb4865701f68ca766f7019b8dd5ad9fd7da99",
+      "size": 127037
+    },
+    "utxo_hodl_1m_3m": {
+      "path": "/root/mybot/data/onchain_v4/utxo_hodl_1m_3m.csv",
+      "rows": 4062,
+      "sha256": "2474838a92cedaba337c51ae32e6bd31271d739ae16392d8a6efb694057c0e44",
+      "size": 124354
+    },
+    "utxo_hodl_1w_1m": {
+      "path": "/root/mybot/data/onchain_v4/utxo_hodl_1w_1m.csv",
+      "rows": 4062,
+      "sha256": "fd7547a34aa0672c2362f31b15c9e239e570d68c879d5c817e6e3ca9d78d1151",
+      "size": 125386
+    },
+    "utxo_hodl_1y_2y": {
+      "path": "/root/mybot/data/onchain_v4/utxo_hodl_1y_2y.csv",
+      "rows": 4062,
+      "sha256": "0b91f0f00631e106c6343afa5435242f4df4ead36462f99c7f02357dd97f6a40",
+      "size": 118717
+    },
+    "utxo_hodl_2y_plus": {
+      "path": "/root/mybot/data/onchain_v4/utxo_hodl_2y_plus.csv",
+      "rows": 4062,
+      "sha256": "501e85ee78b9391a4f2b15392f24c28ba9a2f52bae727dd1ac4278abcc1c5bb3",
+      "size": 112408
+    },
+    "utxo_hodl_3m_6m": {
+      "path": "/root/mybot/data/onchain_v4/utxo_hodl_3m_6m.csv",
+      "rows": 4062,
+      "sha256": "95e6d9118125649ae9bbc7aac93c010bcf2a906cf53f3af34341885b0d71cfaa",
+      "size": 123423
+    },
+    "utxo_hodl_6m_1y": {
+      "path": "/root/mybot/data/onchain_v4/utxo_hodl_6m_1y.csv",
+      "rows": 4062,
+      "sha256": "2afb405f404514676812d890c27ece37a594d8790b4507753fdbdf3b8369cd90",
+      "size": 121758
+    },
+    "utxo_live_utxo_count": {
+      "path": "/root/mybot/data/onchain_v4/utxo_live_utxo_count.csv",
+      "rows": 4062,
+      "sha256": "f93aae4fb96125df798b8f5d11dd82d02916bdf3db0e8f0bbfaebb5e6725bbd6",
+      "size": 85579
+    },
+    "utxo_mvrv": {
+      "path": "/root/mybot/data/onchain_v4/utxo_mvrv.csv",
+      "rows": 4062,
+      "sha256": "732ade3e6a3c85a1d960b964c800b7031de08b4dd27bc105ef277d382b612c56",
+      "size": 110613
+    },
+    "utxo_mvrv_zscore": {
+      "path": "/root/mybot/data/onchain_v4/utxo_mvrv_zscore.csv",
+      "rows": 4062,
+      "sha256": "fbdfafefdf2d556ed258db163d04a5d316a8d5f0086211b02458d91a687696dd",
+      "size": 112052
+    },
+    "utxo_raw_inputs": {
+      "path": "/root/mybot/data/onchain_v4/utxo_raw_inputs.csv",
+      "rows": 4062,
+      "sha256": "cc8d7c01921f999dd3dac0b4561efda9863b93f00998474059a1a1a8f06207d5",
+      "size": 77337
+    },
+    "utxo_realized_price": {
+      "path": "/root/mybot/data/onchain_v4/utxo_realized_price.csv",
+      "rows": 4062,
+      "sha256": "e2d098b4eaf3280d1209311652c9ca4a3f52ef9dc11ca05ce0e8d14d3e81f679",
+      "size": 111162
+    },
+    "utxo_sopr": {
+      "path": "/root/mybot/data/onchain_v4/utxo_sopr.csv",
+      "rows": 4062,
+      "sha256": "f56366efeee0f483b1dd7e93cbf0852550852342bc74127b741cf22e03323342",
+      "size": 111063
+    },
+    "utxo_sopr_coverage_cnt": {
+      "path": "/root/mybot/data/onchain_v4/utxo_sopr_coverage_cnt.csv",
+      "rows": 4062,
+      "sha256": "5c15aecebcf1607bb52960b712a9b647a08182739f9bb68adc1aca2763798242",
+      "size": 76983
+    },
+    "utxo_sopr_coverage_rate": {
+      "path": "/root/mybot/data/onchain_v4/utxo_sopr_coverage_rate.csv",
+      "rows": 4062,
+      "sha256": "44d677898e05a4810af6da2d46f2aed8b968973cd49b564be21592186a26d57f",
+      "size": 77100
+    },
+    "utxo_spent_btc": {
+      "path": "/root/mybot/data/onchain_v4/utxo_spent_btc.csv",
+      "rows": 4062,
+      "sha256": "655a1a613dd41a55c8c73a5ad56ec4c16ee4c5954f7bb0f03889f628071a9efd",
+      "size": 104672
+    },
+    "utxo_supply_btc": {
+      "path": "/root/mybot/data/onchain_v4/utxo_supply_btc.csv",
+      "rows": 4062,
+      "sha256": "6b7e1511dcef8f5889aca8ba9184782e208f7de0e69188d2939dadf51a1d7529",
+      "size": 109960
+    }
+  },
+  "policy": {
+    "asopr_min_age_seconds": 3600,
+    "aws_raw_used": false,
+    "bip30_overwrite_semantics": "removes UTXO inventory/cost basis; excluded from SOPR,aSOPR,CDD,dormancy,raw_inputs",
+    "calendar_close_causality": "if raw block timestamp UTC day of close precedes created day, close day is clamped to created day for inventory/HODL accounting",
+    "canonical_input": "V50_DENSE_STATE_PLUS_CANONICAL_STAGE_BLOCK_TIME",
+    "cdd_age_basis": "max(spent_block_time-created_block_time,0)/86400",
+    "mvrv_zscore_formula": "(market_cap-realized_cap)/expanding_std(market_cap,ddof=0)",
+    "output_eligibility": "exact dense-core: height!=0, script_len<=10000, first_byte!=OP_RETURN; flag independently revalidated from scripts.bin",
+    "pre_price_created_cost_basis_usd": 0,
+    "supply_definition": "sum(value_sats) of eligible and unclosed V50 outputs; not consensus-issued supply"
+  },
+  "price": {
+    "first_date": "2010-07-18",
+    "last_date": "2020-02-16",
+    "path": "/opt/mybot_data/price_usd/btc_usd_coinmetrics_v1.csv",
+    "sha256": "ac7493d8e9fccf2034baeadb589d13cfc44b42bc6a03bd65a4f64234ad0001f6"
+  },
+  "r12_provenance": {
+    "apply": {
+      "path": "/opt/mybot_data/etl/utxo_v50/state/provenance_r12/apply_ledger_v2.jsonl",
+      "records": 163,
+      "sha256": "37b84e56bdf5274feb717af2ac2f14d8b6fafa41ae68a23c3fdc990a9c286bd9",
+      "tail_height": 617698,
+      "tail_record_sha256": "49aad7fbe976f5cd3cbae772b1094469444963c37b8a969c9d47b3b6293a2ec9"
+    },
+    "recovery": {
+      "epoch_origin": "CERTIFIED_R225_ANCHOR_ADOPTION",
+      "epoch_record_sha256": "d5eafe23ef6788d45a2c4e441f09f5dd8adf3175a22404e9a20d2305dfe59351",
+      "path": "/opt/mybot_data/etl/utxo_v50/state/provenance_r12/recovery_ledger_v2.jsonl",
+      "records": 1,
+      "sha256": "0d77d74b7a48af9b16d9e40bdbcf7f4186de0dacf54a844576045259c85e2892"
+    },
+    "source_lineage": {
+      "status": "MISSING_VALID_NO_SOURCE_UPGRADES"
+    },
+    "status": "GREEN"
+  },
+  "schema": "mybot-utxo-metrics-v4-manifest-v1",
+  "stage": {
+    "block_payload_set_sha256": "2d412abc09afb116fc450b72e79a13b8f79ae147ea8b8fba39ecdf13d509dc25",
+    "global_manifest": "/opt/mybot_data/etl/utxo_core_v1/stage2/manifests/canonical_transactions_0_617698.json",
+    "global_sha256": "3dc4e285947651d0c36bf5564c6f424d620947d29f36154ffa1cbb1dbe94860a",
+    "selected_block_files": 618,
+    "target": 617698,
+    "target_hash": "000000000000000000095ad21001856998971c4951123d14276b5f13c45e83d8",
+    "windows_sha256": "ee7137ab81e60fae07ee28c76a8169d29dbe80ca0269f50db061c95d2b45b202",
+    "windows_tsv": "/opt/mybot_data/etl/utxo_core_v1/stage2/manifests/canonical_transactions_0_617698.windows.tsv"
+  },
+  "state": {
+    "block_hash": "000000000000000000095ad21001856998971c4951123d14276b5f13c45e83d8",
+    "capacities": {
+      "close": 1231772922,
+      "hash": 720371712,
+      "out": 1337956664,
+      "tx": 503813853
+    },
+    "checkpoint_sha256": "38ddbf4812105b0d1de8eadca94323d626e89439f19ecbb401199aff790979d7",
+    "close_count": 1231151129,
+    "core_sha256": "e88fdcd74345964673451fe49914507a80898692fad3b012490cb3d5ae2caac5",
+    "driver_sha256": "c735fb8cc7a63d992f0dbb4ce56cd9b4745304711d71f05b7a8db9390bc6911f",
+    "height": 617698,
+    "live_count": 65419258,
+    "live_value_sats": 1822105482121089,
+    "meta_sha256": "c6b82f08d0b49519e473398866fe772e7554c412bd63207784fea28c069e53be",
+    "out_count": 1337956664,
+    "path": "/opt/mybot_data/etl/utxo_v50/state",
+    "script_bytes": 34064650167,
+    "source_sha256": "3dc4e285947651d0c36bf5564c6f424d620947d29f36154ffa1cbb1dbe94860a",
+    "tx_count": 503813853
+  },
+  "status": "GREEN",
+  "terminal_checks": {
+    "checkpoint_live_count_match": true,
+    "checkpoint_live_value_match": true,
+    "stage_block_payloads_stable": true,
+    "state_stable": true
+  },
+  "version": "utxo_metrics_v4-r4-v50-r12.9-prod"
+}

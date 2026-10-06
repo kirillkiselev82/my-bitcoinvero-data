@@ -1,0 +1,43 @@
+{
+  "auditor_sha256": "2a8b601961affd78efc90b3cc9c6042e29565a2de765d5c94edadf94f9f30d39",
+  "certification_impact": "MANDATORY_IN_V51.5.4_FULL_AUDIT; STANDALONE_EVIDENCE_ONLY",
+  "created_utc": "2026-09-15T12:06:04.335709+00:00",
+  "elapsed_sec": 42.795,
+  "guard": {
+    "batch_size": 2000,
+    "certification_blocking": false,
+    "core_end_hash_final": "000000000000000000095ad21001856998971c4951123d14276b5f13c45e83d8",
+    "core_end_hash_initial": "000000000000000000095ad21001856998971c4951123d14276b5f13c45e83d8",
+    "end_anchor_stable": true,
+    "expected_chain_digest_sha256": "c342443fffabd2acbe0d62e399339bf432acd24353a06cc2e13c32a739b26f2c",
+    "failed_checks": [],
+    "heights_checked": 617699,
+    "mismatch_count": 0,
+    "mismatch_samples": [],
+    "observed_chain_digest_sha256": "c342443fffabd2acbe0d62e399339bf432acd24353a06cc2e13c32a739b26f2c",
+    "proof_scope": "ALL_HEIGHTS_ACTIVE_CHAIN_VS_STAGE",
+    "range": {
+      "end": 617698,
+      "heights": 617699,
+      "start": 0
+    },
+    "stage_end_hash": "000000000000000000095ad21001856998971c4951123d14276b5f13c45e83d8",
+    "stage_payload_stable": true,
+    "state_mutation": "NONE_BY_CONTRACT",
+    "status": "OK"
+  },
+  "schema": "mybot-v51-core-chain-guard-v1",
+  "stage": {
+    "path": "/opt/mybot_data/etl/utxo_core_v1/stage2/manifests/canonical_transactions_0_617698.json",
+    "sha256": "3dc4e285947651d0c36bf5564c6f424d620947d29f36154ffa1cbb1dbe94860a",
+    "windows_sha256": "ee7137ab81e60fae07ee28c76a8169d29dbe80ca0269f50db061c95d2b45b202"
+  },
+  "state": {
+    "block_hash": "000000000000000000095ad21001856998971c4951123d14276b5f13c45e83d8",
+    "height": 617698,
+    "path": "/opt/mybot_data/etl/utxo_v50/state"
+  },
+  "state_mutation": "NONE_BY_CONTRACT",
+  "status": "OK",
+  "version": "v51.5.4-independent-auditor-r12.9-core-chain-guard-prod"
+}

@@ -1,0 +1,22 @@
+{
+  "role": "daily BTC/USD price used for price-derived metrics",
+  "file_name": "btc_usd_coinmetrics_v1.csv",
+  "sha256": "ac7493d8e9fccf2034baeadb589d13cfc44b42bc6a03bd65a4f64234ad0001f6",
+  "bytes": 99680,
+  "rows": 3501,
+  "first_date": "2010-07-18",
+  "last_date": "2020-02-16",
+  "columns": [
+    "date",
+    "price"
+  ],
+  "redistributed_in_this_archive": false,
+  "note": "Historical private input identity only. No source observations or price-derived metric series are bundled. Matching this hash with a current provider download is not guaranteed.",
+  "provider_claim": "Coin Metrics, based on operator description and filename; acquisition provenance not established",
+  "community_origin_verified": false,
+  "download_url": null,
+  "acquired_utc": null,
+  "api_metric": null,
+  "preprocessing_provenance": null,
+  "price_derived_series_included": false
+}

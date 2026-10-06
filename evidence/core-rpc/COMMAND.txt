@@ -1,0 +1,34 @@
+Bitcoin Core RPC evidence: operator terminal responses supplied on 2026-10-06.
+
+Commands used by the operator:
+  bitcoin-cli -rpcconnect=127.0.0.1 -rpcport=8332 \
+    -rpccookiefile=/opt/mybot_data/bitcoin/.cookie \
+    gettxoutsetinfo muhash 617698 true
+  bitcoin-cli -rpcconnect=127.0.0.1 -rpcport=8332 \
+    -rpccookiefile=/opt/mybot_data/bitcoin/.cookie \
+    gettxoutsetinfo muhash 663917 true
+
+Only the cookie file path is recorded. Its contents are not bundled.
+A coinstatsindex indexed through the requested height is needed for this
+historical query. The operator also supplied getindexinfo showing a synced
+coinstatsindex at height 970205.
+
+Observed client version from the operator's earlier bitcoin-cli -version:
+  Bitcoin Core RPC client version v31.1.0
+
+RUNNING DAEMON VERSION AT RPC CAPTURE: NOT RECORDED / NOT VERIFIED.
+The client version must not be substituted for the server version. Historical
+audit context is not evidence of the daemon version at the later RPC capture.
+
+To record the locally installed bitcoind binary version on the source host:
+  bitcoind --version
+To record version/subversion of the running RPC server (without its peer list):
+  bitcoin-cli -rpcconnect=127.0.0.1 -rpcport=8332 \
+    -rpccookiefile=/opt/mybot_data/bitcoin/.cookie getnetworkinfo | \
+    python3 -c 'import json,sys; x=json.load(sys.stdin); print(json.dumps({k:x[k] for k in ("version","subversion")}, indent=2))'
+
+core_617698.json and core_663917.json contain all fields of the operator-provided
+responses, including block_info. They were transcribed/reformatted into JSON for
+packaging, not saved directly as original RPC bytes. Their hashes identify these
+packaged files. Capture time, executable hash and server version were not
+independently collected. No external independent audit is asserted.

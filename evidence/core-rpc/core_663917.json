@@ -1,0 +1,21 @@
+{
+  "height": 663917,
+  "bestblock": "0000000000000000000d7ca368445ef858a6d133ba2d9cbc4c8ab68408570c43",
+  "txouts": 68584801,
+  "bogosize": 5147438932,
+  "muhash": "0a3eabab82b37c495f79c19cb300adf4769b76caaa4077d80d89233553588094",
+  "total_amount": 18586796.44247703,
+  "total_unspendable_amount": 191.05752297,
+  "block_info": {
+    "prevout_spent": 2137.33200927,
+    "coinbase": 6.65234409,
+    "new_outputs_ex_coinbase": 2136.92966518,
+    "unspendable": 0.00000000,
+    "unspendables": {
+      "genesis_block": 0.00000000,
+      "bip30": 0.00000000,
+      "scripts": 0.00000000,
+      "unclaimed_rewards": 0.00000000
+    }
+  }
+}
