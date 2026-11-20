@@ -1,0 +1,584 @@
+{
+  "calculator_contract": {
+    "checkpoint_post_hash_admission": {
+      "estimated_working_bytes": 8478302410,
+      "limiting_candidates": [
+        {
+          "limits": {
+            "memory.high": "max",
+            "memory.max": "max"
+          },
+          "memory_current_bytes": 74852052992,
+          "path": "/sys/fs/cgroup/user.slice/user-0.slice/session-20.scope"
+        },
+        {
+          "limits": {
+            "memory.high": "max",
+            "memory.max": "max"
+          },
+          "memory_current_bytes": 74986479616,
+          "path": "/sys/fs/cgroup/user.slice/user-0.slice"
+        },
+        {
+          "limits": {
+            "memory.high": "max",
+            "memory.max": "max"
+          },
+          "memory_current_bytes": 95933382656,
+          "path": "/sys/fs/cgroup/user.slice"
+        },
+        {
+          "path": "/sys/fs/cgroup",
+          "scope": "HOST_ROOT_NO_PER_CGROUP_MEMORY_CONTROLS"
+        }
+      ],
+      "measured_available_bytes": 106951577600,
+      "phase": "POST_CHECKPOINT_INPUT_HASH",
+      "process_hard_cap": "EXTERNAL_CGROUP_REQUIRED_FOR_HARD_ENFORCEMENT",
+      "reserve_bytes": 268435456,
+      "scope": "CONSERVATIVE_MODEL_NOT_OBSERVED_PEAK"
+    },
+    "core_sha256": "e844b24ea3db81112444b3dd7d7bc26c525afac3d6e6c0ddb69cc0edfd86b0f1",
+    "delivery_sha256": "d87cbb0fb074e0ebcae6b708d256eb9a3da4ece4bcfe43c8c65916b406067cc6",
+    "driver_sha256": "13088c39047206e0e71dcd510100ce9853f81ef941246aa425d39bc520087c3a",
+    "metrics_dependencies": {
+      "duckdb": "1.4.4",
+      "lab_versions_certify_server": false,
+      "numpy": "2.0.2",
+      "pandas": "2.2.3",
+      "python": "3.9.25 (main, Jul 13 2026, 00:00:00) \n[GCC 11.5.0 20240719 (Red Hat 11.5.0-14)]"
+    },
+    "metrics_memory_admission": {
+      "checkpoint_scratch_allowance_bytes": 33554432,
+      "checkpoint_single_image_bytes": 827951712,
+      "checkpoint_two_image_file_cache_allowance_bytes": 1655903424,
+      "estimated_working_bytes": 8478302410,
+      "limiting_candidates": [
+        {
+          "limits": {
+            "memory.high": "max",
+            "memory.max": "max"
+          },
+          "memory_current_bytes": 511254528,
+          "path": "/sys/fs/cgroup/user.slice/user-0.slice/session-20.scope"
+        },
+        {
+          "limits": {
+            "memory.high": "max",
+            "memory.max": "max"
+          },
+          "memory_current_bytes": 645713920,
+          "path": "/sys/fs/cgroup/user.slice/user-0.slice"
+        },
+        {
+          "limits": {
+            "memory.high": "max",
+            "memory.max": "max"
+          },
+          "memory_current_bytes": 95525998592,
+          "path": "/sys/fs/cgroup/user.slice"
+        },
+        {
+          "path": "/sys/fs/cgroup",
+          "scope": "HOST_ROOT_NO_PER_CGROUP_MEMORY_CONTROLS"
+        }
+      ],
+      "measured_available_bytes": 106951376896,
+      "phase": "METRICS_WITH_CHECKPOINT",
+      "process_hard_cap": "EXTERNAL_CGROUP_REQUIRED_FOR_HARD_ENFORCEMENT",
+      "reserve_bytes": 268435456,
+      "scope": "CONSERVATIVE_MODEL_NOT_OBSERVED_PEAK"
+    },
+    "package_sha256": "84c963f583b45844f5ac72e776e89bcaf981db3727be7824cb7d0866fe312642",
+    "price_sha256": "f4b1dc839cf82f822cd7489b5f37fb806f4e805515576ecb34d1fcc988304a8b",
+    "runtime": {
+      "duckdb_native_sha256": {
+        "path": "/root/mybot/.venv/lib64/python3.9/site-packages/_duckdb.cpython-39-x86_64-linux-gnu.so",
+        "sha256": "b499a9ad6bc7fe9e40257659cb044e4d3f95615a7c0caec7872bd9b08c1aff97"
+      },
+      "duckdb_python_sha256": {
+        "path": "/root/mybot/.venv/lib64/python3.9/site-packages/duckdb/__init__.py",
+        "sha256": "2b20aa68f219791777a195cfec5f87fff610299d26bfbc1e6ef7692476c704a1"
+      },
+      "python_runtime_sha256": {
+        "path": "/root/mybot/.venv/bin/python3",
+        "sha256": "9a7f11da622ab39dc61c46713044625feb793a7e48fef4d5138256b4bf2c5fa3"
+      }
+    },
+    "supervisor_sha256": "97f7ebe30bf22098641da9a99aea86125efbbd39ffa41cd4691c35bb31fad016",
+    "tokens": {
+      "/opt/mybot_data/etl/utxo_v51_new/evidence/state_binding.json": {
+        "content_sha256": "a74f45778b330809ec3f8290201968d0aeb2976278717742b4d1adf75904bce0",
+        "ctime_ns": 1792007331974738041,
+        "dev": 66309,
+        "ino": 6641971965,
+        "mtime_ns": 1792007331974738041,
+        "size": 698
+      },
+      "/opt/mybot_data/etl/utxo_v51_new/runtime/_path_policy.py": {
+        "content_sha256": "08fb4edc0dd5d60aa1b9da0b7675886a4a6c22df4b966894300f8bb4cbec5fe4",
+        "ctime_ns": 1791567633911860273,
+        "dev": 66309,
+        "ino": 6641971939,
+        "mtime_ns": 1791567633910860269,
+        "size": 3769
+      },
+      "/opt/mybot_data/etl/utxo_v51_new/runtime/_pipeline.py": {
+        "content_sha256": "13088c39047206e0e71dcd510100ce9853f81ef941246aa425d39bc520087c3a",
+        "ctime_ns": 1791567633913860281,
+        "dev": 66309,
+        "ino": 6641971941,
+        "mtime_ns": 1791567633912860277,
+        "size": 115231
+      },
+      "/opt/mybot_data/etl/utxo_v51_new/runtime/_stage_contract.py": {
+        "content_sha256": "1e6ca1c694201cd9e996953d44021915ca211f00466bef80367cb6a63e6ac8e0",
+        "ctime_ns": 1791567633912860277,
+        "dev": 66309,
+        "ino": 6641971940,
+        "mtime_ns": 1791567633911860273,
+        "size": 1459
+      },
+      "/opt/mybot_data/etl/utxo_v51_new/runtime/utxo_v50_dense_core_r13": {
+        "content_sha256": "e844b24ea3db81112444b3dd7d7bc26c525afac3d6e6c0ddb69cc0edfd86b0f1",
+        "ctime_ns": 1791567637310873598,
+        "dev": 66309,
+        "ino": 17706659,
+        "mtime_ns": 1791567637303873570,
+        "size": 179176
+      },
+      "/opt/mybot_data/etl/utxo_v51_new/state/provenance_r13/apply_ledger_v2.jsonl": {
+        "content_sha256": "c0aac39a28d9a1031dcfefead8371899ba183fdd024a5b4c39c5d5a992227282",
+        "ctime_ns": 1792816838251607175,
+        "dev": 66309,
+        "ino": 2151034478,
+        "mtime_ns": 1792816838248607159,
+        "size": 1257037
+      },
+      "/opt/mybot_data/etl/utxo_v51_new/state/provenance_r13/recovery_ledger_v2.jsonl": {
+        "content_sha256": "ff170eeaac3329432c91094f5b408f725c64f0b4fba30af7f5c30109973e5614",
+        "ctime_ns": 1792149142554369993,
+        "dev": 66309,
+        "ino": 2148727177,
+        "mtime_ns": 1792149142551369977,
+        "size": 3437
+      },
+      "/opt/mybot_data/etl/utxo_v51_new/state/provenance_r13/source_lineage_v1.jsonl": {
+        "content_sha256": "3374f7d4d090bbbb49d9139211b93f4c335c2bd2de2d5292fa081985747b879e",
+        "ctime_ns": 1792007330624732670,
+        "dev": 66309,
+        "ino": 2151034432,
+        "mtime_ns": 1792007330623732666,
+        "size": 2622
+      },
+      "/opt/mybot_data/price_usd/btc_usd_coinmetrics_20261104.csv": {
+        "content_sha256": "f4b1dc839cf82f822cd7489b5f37fb806f4e805515576ecb34d1fcc988304a8b",
+        "ctime_ns": 1793920126511186259,
+        "dev": 66309,
+        "ino": 6641976413,
+        "mtime_ns": 1793920126511186259,
+        "size": 164672
+      },
+      "/root/mybot/.venv/bin/python3": {
+        "content_sha256": "9a7f11da622ab39dc61c46713044625feb793a7e48fef4d5138256b4bf2c5fa3",
+        "ctime_ns": 1786640046809082515,
+        "dev": 64768,
+        "ino": 336163990,
+        "mtime_ns": 1768486167000000000,
+        "size": 15440
+      },
+      "/root/mybot/.venv/lib64/python3.9/site-packages/_duckdb.cpython-39-x86_64-linux-gnu.so": {
+        "ctime_ns": 1786640045338075468,
+        "dev": 64768,
+        "ino": 1777541,
+        "mtime_ns": 1772112996000000000,
+        "size": 57581048
+      },
+      "/root/mybot/.venv/lib64/python3.9/site-packages/duckdb/__init__.py": {
+        "content_sha256": "2b20aa68f219791777a195cfec5f87fff610299d26bfbc1e6ef7692476c704a1",
+        "ctime_ns": 1786640045340075477,
+        "dev": 64768,
+        "ino": 268565210,
+        "mtime_ns": 1772112996000000000,
+        "size": 7507
+      },
+      "/root/mybot/releases/v51-r14-dev16/utxo_pipeline_v51.py": {
+        "content_sha256": "d87cbb0fb074e0ebcae6b708d256eb9a3da4ece4bcfe43c8c65916b406067cc6",
+        "ctime_ns": 1791845755822737844,
+        "dev": 64768,
+        "ino": 336778053,
+        "mtime_ns": 1791845755822737844,
+        "size": 744140
+      }
+    },
+    "transition": {
+      "active_journal": "transition-upgrade-source-968206-dev16-reuse-1.json",
+      "checked_journals": 4,
+      "metadata_sha256": "58d00a5b8677430879cf3837b64ca5fd54aceacd5104f5d53aabee8f3fbf8625",
+      "scope": "HISTORICAL_COMPLETION_NOT_FRESH_UTXO_CERTIFICATION",
+      "status": "COMPLETED_RECORDED"
+    },
+    "validation": "STATIC_PINS_NO_CORE_EXECUTION"
+  },
+  "calendar": {
+    "block_timestamp_causality_clamped_closes": 1331,
+    "days": 6473,
+    "end": "2026-09-23",
+    "start": "2009-01-03"
+  },
+  "certified": false,
+  "checkpointing": {
+    "append_base_enabled": true,
+    "arbitrary_privileged_writer_immutability_proof": false,
+    "automatic_boot_restart": false,
+    "directory": "/opt/mybot_tmp/utxo_metrics_v4_4_968206/checkpoint-v4_4",
+    "enabled": true,
+    "input_protection": "FRESH_PREFLIGHT_SHARED_LEASES_FULL_COMMITTED_STATE_SHA256_AND_EXACT_BINDING",
+    "interval_seconds": 300,
+    "loaded_progress": null,
+    "resumed": false,
+    "scan_workers": 1,
+    "sequential_state_hash_bytes_this_invocation": 388465302387,
+    "snapshot_bytes_written_this_invocation": 217754362405,
+    "snapshots_written_this_invocation": 271
+  },
+  "core_chain_guard": {
+    "certified": false,
+    "scope": "INDEPENDENT_HISTORY_CORE_CHAIN_AUDIT",
+    "status": "NOT_PERFORMED"
+  },
+  "counts": {
+    "bip30_overwrites": 2,
+    "closes": 3503588291,
+    "eligible_outputs_created": 3668793104,
+    "ineligible_outputs_created": 267438058,
+    "normal_spends": 3503588289,
+    "outputs": 3936231162,
+    "terminal_live_count": 165204813,
+    "terminal_live_value_sats": 2008791675380694
+  },
+  "created_utc": "2026-11-08T03:27:14Z",
+  "current_live_recertification": "NOT_PERFORMED",
+  "dense_state_validation": {
+    "bip30": {
+      "generation_heights": [
+        91722,
+        91812,
+        91842,
+        91880
+      ],
+      "overwrite_closes": 2,
+      "scope": "PINNED_NATIVE_INTERNAL_CHECK_NOT_INDEPENDENT_HISTORY_AUDIT"
+    },
+    "out_frontier": 3936231162,
+    "status": "GREEN",
+    "terminal_height": 968206,
+    "tx_count": 1444850128
+  },
+  "elapsed_sec": 120645.29,
+  "independent_history_audit": "NOT_PERFORMED",
+  "independent_state_audit_evidence": {
+    "certified": false,
+    "current_live_recertification": "NOT_PERFORMED",
+    "independent_history_audit": "NOT_PERFORMED",
+    "operator_selected_policy": "internal-checks-only",
+    "scope": "INDEPENDENT_HISTORY_AND_MUHASH",
+    "status": "NOT_PERFORMED",
+    "tokens": {}
+  },
+  "locks": {
+    "driver": {
+      "path": "/opt/mybot_data/etl/utxo_v51_new/.v50-driver.lock",
+      "shared_lock_held": true
+    },
+    "state": {
+      "path": "/opt/mybot_data/etl/utxo_v51_new/state/LOCK",
+      "shared_lock_held": true
+    },
+    "supervisor": {
+      "path": "/opt/mybot_data/etl/utxo_v51_new/.v50-r12-supervisor.lock",
+      "shared_lock_held": true
+    }
+  },
+  "manifest_payload_sha256": "71dedc7e921465750e8b719f16ac8fac81a51f6273df1d8ab14ee15b35802cb1",
+  "metrics_code_sha256": "65810f7a3521e22dceff7185b7726134dc268bd7d4e615ff7eaaa8a18c5cf249",
+  "outputs": {
+    "utxo_asopr": {
+      "path": "/root/mybot/data/onchain_v4/utxo_asopr.csv",
+      "rows": 6473,
+      "sha256": "4a94933fdfe6de63195d40c2021a66f9bb842ff7833801386b4c83c2a97b6011",
+      "size": 182893
+    },
+    "utxo_asopr_coverage_cnt": {
+      "path": "/root/mybot/data/onchain_v4/utxo_asopr_coverage_cnt.csv",
+      "rows": 6473,
+      "sha256": "220c6834d5c830a9fe7fbead0f1ff8635892ee2adc044b991c78403788230e9d",
+      "size": 124672
+    },
+    "utxo_asopr_coverage_rate": {
+      "path": "/root/mybot/data/onchain_v4/utxo_asopr_coverage_rate.csv",
+      "rows": 6473,
+      "sha256": "edf8eafc328e1844b7ac66caf65da9f33f1f19e245bdc7b6083d54bd23e74979",
+      "size": 184541
+    },
+    "utxo_cap_mrkt_cur_usd": {
+      "path": "/root/mybot/data/onchain_v4/utxo_cap_mrkt_cur_usd.csv",
+      "rows": 6473,
+      "sha256": "cd5f302f97dc4a521a5dd235ca297bdc3719d65bc953d56835ed940f6fcc58d0",
+      "size": 179533
+    },
+    "utxo_cap_real_usd": {
+      "path": "/root/mybot/data/onchain_v4/utxo_cap_real_usd.csv",
+      "rows": 6473,
+      "sha256": "6a2d329a1a72beb6de5f708155eaa02146cc24f0a09dd15b01c6eb0476544078",
+      "size": 181480
+    },
+    "utxo_cdd": {
+      "path": "/root/mybot/data/onchain_v4/utxo_cdd.csv",
+      "rows": 6473,
+      "sha256": "0d74c2b0781f37a19aa04c22974b937d691374e32098cb7d9d8e43904ead758c",
+      "size": 186095
+    },
+    "utxo_closed_btc": {
+      "path": "/root/mybot/data/onchain_v4/utxo_closed_btc.csv",
+      "rows": 6473,
+      "sha256": "591f5f32bcc4d136d421e3b0698ccda76eadbecc4fabd16f496c40b665685af7",
+      "size": 170621
+    },
+    "utxo_created_btc": {
+      "path": "/root/mybot/data/onchain_v4/utxo_created_btc.csv",
+      "rows": 6473,
+      "sha256": "ed9fbe245351000b1cd2c26a9b96b2f4037a21d182d8d9fc33d5319dbe55bc5c",
+      "size": 171530
+    },
+    "utxo_dormancy": {
+      "path": "/root/mybot/data/onchain_v4/utxo_dormancy.csv",
+      "rows": 6473,
+      "sha256": "e27d230dfb7326e65977be8b88343e585589f71c2d7aa1a99fcd45aff0ce8933",
+      "size": 185678
+    },
+    "utxo_hodl_0_1d": {
+      "path": "/root/mybot/data/onchain_v4/utxo_hodl_0_1d.csv",
+      "rows": 6473,
+      "sha256": "a9839abd562758216a9d3f2178cac8d08acbb30291536f0db0ba9679149e2432",
+      "size": 205611
+    },
+    "utxo_hodl_1d_1w": {
+      "path": "/root/mybot/data/onchain_v4/utxo_hodl_1d_1w.csv",
+      "rows": 6473,
+      "sha256": "b4e570c6255ad38b2700be9b1d17804654fbf7590e3430ef9aac2ddc18000484",
+      "size": 203158
+    },
+    "utxo_hodl_1m_3m": {
+      "path": "/root/mybot/data/onchain_v4/utxo_hodl_1m_3m.csv",
+      "rows": 6473,
+      "sha256": "d4045e24b00d5b7af80b7307e7056e41e74fa20645e84214e8e04eb83902b7f8",
+      "size": 198880
+    },
+    "utxo_hodl_1w_1m": {
+      "path": "/root/mybot/data/onchain_v4/utxo_hodl_1w_1m.csv",
+      "rows": 6473,
+      "sha256": "a44c694aee3837ad803d71b31c47be7337bfd86cede1aec51b35c2beb331eff8",
+      "size": 200478
+    },
+    "utxo_hodl_1y_2y": {
+      "path": "/root/mybot/data/onchain_v4/utxo_hodl_1y_2y.csv",
+      "rows": 6473,
+      "sha256": "9ccc9c159bc382084e8f4d82428e2a98e1c20c519ab9369a5f095d3f4a0283bc",
+      "size": 192873
+    },
+    "utxo_hodl_2y_plus": {
+      "path": "/root/mybot/data/onchain_v4/utxo_hodl_2y_plus.csv",
+      "rows": 6473,
+      "sha256": "ea0a2e2f1e8c3bc4170893080c0f596e2a19a8f6f0cdb4c8d1a35090bf5c6756",
+      "size": 185176
+    },
+    "utxo_hodl_3m_6m": {
+      "path": "/root/mybot/data/onchain_v4/utxo_hodl_3m_6m.csv",
+      "rows": 6473,
+      "sha256": "c43af50a00c09f4d859a1f2a3e74f9ade6c1742c49e93917d40d42e1c0e501d8",
+      "size": 197881
+    },
+    "utxo_hodl_6m_1y": {
+      "path": "/root/mybot/data/onchain_v4/utxo_hodl_6m_1y.csv",
+      "rows": 6473,
+      "sha256": "807a8b2b55cb0225990bfba55b42ad9e4990131e9f8c26d133b3a551e61a8036",
+      "size": 195993
+    },
+    "utxo_live_utxo_count": {
+      "path": "/root/mybot/data/onchain_v4/utxo_live_utxo_count.csv",
+      "rows": 6473,
+      "sha256": "b9c6b0f7107f2bd411b6ec92c22e4234eb4f1129b62c383ee2a0f5b880ee1f63",
+      "size": 139838
+    },
+    "utxo_mvrv": {
+      "path": "/root/mybot/data/onchain_v4/utxo_mvrv.csv",
+      "rows": 6473,
+      "sha256": "ec2ca15c7205777d04c8faa67c8e20f811820e9bc10a23ca623dcd07d932c330",
+      "size": 182178
+    },
+    "utxo_mvrv_zscore": {
+      "path": "/root/mybot/data/onchain_v4/utxo_mvrv_zscore.csv",
+      "rows": 6473,
+      "sha256": "72f2ccc431efd5a5e4d8ae89889ccdfe3a7ce6f2cb935048b48f12ab2f89f18e",
+      "size": 184299
+    },
+    "utxo_raw_inputs": {
+      "path": "/root/mybot/data/onchain_v4/utxo_raw_inputs.csv",
+      "rows": 6473,
+      "sha256": "3be91c77b4e51cd60c39509d6565c0f7d5eacc059617f9b00635606489385759",
+      "size": 126427
+    },
+    "utxo_realized_price": {
+      "path": "/root/mybot/data/onchain_v4/utxo_realized_price.csv",
+      "rows": 6473,
+      "sha256": "4109eb7befe3b20ab799da2a04b174fc6deec78f8b036cd457056c5a8c2a4d7a",
+      "size": 180458
+    },
+    "utxo_sopr": {
+      "path": "/root/mybot/data/onchain_v4/utxo_sopr.csv",
+      "rows": 6473,
+      "sha256": "4ac288467d10acad85ef27d2eb2498394d7abe4f285ed6c756da47db029b1a2b",
+      "size": 182901
+    },
+    "utxo_sopr_coverage_cnt": {
+      "path": "/root/mybot/data/onchain_v4/utxo_sopr_coverage_cnt.csv",
+      "rows": 6473,
+      "sha256": "d4bf2b29ca42954183e4770770e5b8409eac2c2d84f5823a1c17b014f024e3ee",
+      "size": 126073
+    },
+    "utxo_sopr_coverage_rate": {
+      "path": "/root/mybot/data/onchain_v4/utxo_sopr_coverage_rate.csv",
+      "rows": 6473,
+      "sha256": "fadb721853736f628c56b201b0cc3e8b5c2d374e3ac251c8ad14a5d031a42e06",
+      "size": 114501
+    },
+    "utxo_spent_btc": {
+      "path": "/root/mybot/data/onchain_v4/utxo_spent_btc.csv",
+      "rows": 6473,
+      "sha256": "b90b1cee64bec74ca2ba9b991e5864ef77d44d39e75f521e82216448128af10c",
+      "size": 170615
+    },
+    "utxo_supply_btc": {
+      "path": "/root/mybot/data/onchain_v4/utxo_supply_btc.csv",
+      "rows": 6473,
+      "sha256": "88c49d24ece549a7b248b2aa5ba6a6f596783a12a39f1d679baa73f5f9f6e581",
+      "size": 179615
+    }
+  },
+  "policy": {
+    "asopr_min_age_seconds": 3600,
+    "aws_raw_used": false,
+    "bip30_overwrite_semantics": "removes UTXO inventory/cost basis; excluded from SOPR,aSOPR,CDD,dormancy,raw_inputs",
+    "calendar_close_causality": "if raw block timestamp UTC day of close precedes created day, close day is clamped to created day for inventory/HODL accounting",
+    "canonical_input": "V50_DENSE_STATE_PLUS_CANONICAL_STAGE_BLOCK_TIME",
+    "cdd_age_basis": "max(spent_block_time-created_block_time,0)/86400",
+    "mvrv_zscore_formula": "(market_cap-realized_cap)/expanding_std(market_cap,ddof=0)",
+    "output_eligibility": "exact dense-core: height!=0, script_len<=10000, first_byte!=OP_RETURN; flag independently revalidated from scripts.bin",
+    "pre_price_created_cost_basis_usd": 0,
+    "supply_definition": "sum(value_sats) of eligible and unclosed V50 outputs; not consensus-issued supply"
+  },
+  "price": {
+    "coverage_policy": {
+      "before_first_price": "ZERO_COST_BASIS_RATIOS_NAN",
+      "coverage_end_required": "2026-09-23",
+      "day_basis": "UTC",
+      "duplicate_day": "LAST_ROW",
+      "forward_filled_days": 0,
+      "forward_filled_ranges": [],
+      "gap_length_limit": null,
+      "missing_days": "FORWARD_FILL",
+      "pre_price_days": 561
+    },
+    "first_date": "2010-07-18",
+    "last_date": "2026-11-04",
+    "path": "/opt/mybot_data/price_usd/btc_usd_coinmetrics_20261104.csv",
+    "sha256": "f4b1dc839cf82f822cd7489b5f37fb806f4e805515576ecb34d1fcc988304a8b"
+  },
+  "r14_provenance": {
+    "apply": {
+      "path": "/opt/mybot_data/etl/utxo_v51_new/state/provenance_r13/apply_ledger_v2.jsonl",
+      "records": 971,
+      "sha256": "c0aac39a28d9a1031dcfefead8371899ba183fdd024a5b4c39c5d5a992227282",
+      "tail_height": 968206,
+      "tail_record_sha256": "67c00b28cdbab1bb882a2ae3be52d80698c67bc1456bae73aad433ac1040c6fd"
+    },
+    "recovery": {
+      "epoch_origin": "FRESH_R12_INIT",
+      "epoch_record_sha256": "f29053a1db2df5d87b651d248dc2bb43cae7b9c18aa35006e5533222d62f352f",
+      "path": "/opt/mybot_data/etl/utxo_v51_new/state/provenance_r13/recovery_ledger_v2.jsonl",
+      "records": 4,
+      "sha256": "ff170eeaac3329432c91094f5b408f725c64f0b4fba30af7f5c30109973e5614"
+    },
+    "source_lineage": {
+      "apply_terminal_source_sha256": "2e7359db5990c28ef9f05b08e7c089ab161a2ba9ea8eaa7ada1bfa2792f3747e",
+      "epoch_source_sha256": "9a2bcf569d377f53ee0754b226cbc8f7b575f5b885eca9e9529ce1cf233912f1",
+      "path": "/opt/mybot_data/etl/utxo_v51_new/state/provenance_r13/source_lineage_v1.jsonl",
+      "presence": "PRESENT",
+      "records": 1,
+      "sha256": "3374f7d4d090bbbb49d9139211b93f4c335c2bd2de2d5292fa081985747b879e",
+      "status": "GREEN",
+      "terminal_source_sha256": "2e7359db5990c28ef9f05b08e7c089ab161a2ba9ea8eaa7ada1bfa2792f3747e",
+      "transitions": [
+        {
+          "committed_height": 663917,
+          "new_source_sha256": "2e7359db5990c28ef9f05b08e7c089ab161a2ba9ea8eaa7ada1bfa2792f3747e",
+          "old_source_sha256": "9a2bcf569d377f53ee0754b226cbc8f7b575f5b885eca9e9529ce1cf233912f1",
+          "record_no": 1,
+          "record_sha256": "20610a085afa0a4cd2a6250cc5fb5ed23aad801544c4961c36c81efa902b4093"
+        }
+      ]
+    },
+    "stage_source_sha256": "2e7359db5990c28ef9f05b08e7c089ab161a2ba9ea8eaa7ada1bfa2792f3747e",
+    "status": "GREEN"
+  },
+  "schema": "mybot-utxo-metrics-r14-manifest-v1",
+  "stage": {
+    "blocks_sha_verified": true,
+    "global_manifest": "/opt/mybot_data/etl/utxo_core_v2/stage/manifests/releases/stage_release_0_968206.json",
+    "global_sha256": "2e7359db5990c28ef9f05b08e7c089ab161a2ba9ea8eaa7ada1bfa2792f3747e",
+    "other_payload_full_SHA": "NOT_PERFORMED",
+    "release_end": 968206,
+    "selected_block_files": 970,
+    "target": 968206,
+    "target_hash": "00000000000000000000014b8c7f91bbf877876ca6b709a3e167a1fa3d42362f",
+    "windows_sha256": "1288f474eae296b119dec58fe3c5a8eccb40804acfd7bc9d76b02ba7db73e60b",
+    "windows_tsv": "/opt/mybot_data/etl/utxo_core_v2/stage/manifests/releases/stage_release_0_968206.windows.tsv"
+  },
+  "state": {
+    "bip30_seq_plus1": [
+      142784,
+      142842
+    ],
+    "block_hash": "00000000000000000000014b8c7f91bbf877876ca6b709a3e167a1fa3d42362f",
+    "capacities": {
+      "close": 3504560592,
+      "hash": 2064646144,
+      "out": 3936231162,
+      "tx": 1444850128
+    },
+    "checkpoint_sha256": "af865e7e8654126c68fe14c038d43b393eddd1821b6e8f55db00483fbef8f7d1",
+    "close_count": 3503588291,
+    "core_sha256": "e844b24ea3db81112444b3dd7d7bc26c525afac3d6e6c0ddb69cc0edfd86b0f1",
+    "driver_sha256": "13088c39047206e0e71dcd510100ce9853f81ef941246aa425d39bc520087c3a",
+    "height": 968206,
+    "live_count": 165204813,
+    "live_value_sats": 2008791675380694,
+    "meta_sha256": "b9d9af0df9d228cb49deb7995c888ac5d6713ca8cb850b5211e1ba459544ae52",
+    "out_count": 3936231162,
+    "path": "/opt/mybot_data/etl/utxo_v51_new/state",
+    "script_bytes": 97508179051,
+    "source_sha256": "2e7359db5990c28ef9f05b08e7c089ab161a2ba9ea8eaa7ada1bfa2792f3747e",
+    "tx_count": 1444850128
+  },
+  "status": "COMPUTED_WITH_LIMITED_VALIDATION",
+  "terminal_checks": {
+    "checkpoint_live_count_match": true,
+    "checkpoint_live_value_match": true,
+    "stage_block_payloads_stable": true,
+    "state_stable": true
+  },
+  "validation_policy": "internal-checks-only",
+  "version": "4.4",
+  "warning": "Pinned DEV16, validated ledger/Stage blocks and internal dense checks; MuHash and independent history audit were not performed."
+}

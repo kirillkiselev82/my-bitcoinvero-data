@@ -1,22 +1,18 @@
 {
-  "role": "daily BTC/USD price used for price-derived metrics",
-  "file_name": "btc_usd_coinmetrics_v1.csv",
-  "sha256": "ac7493d8e9fccf2034baeadb589d13cfc44b42bc6a03bd65a4f64234ad0001f6",
-  "bytes": 99680,
-  "rows": 3501,
-  "first_date": "2010-07-18",
-  "last_date": "2020-02-16",
-  "columns": [
-    "date",
-    "price"
-  ],
-  "redistributed_in_this_archive": false,
-  "note": "Historical private input identity only. No source observations or price-derived metric series are bundled. Matching this hash with a current provider download is not guaranteed.",
-  "provider_claim": "Coin Metrics, based on operator description and filename; acquisition provenance not established",
-  "community_origin_verified": false,
-  "download_url": null,
+  "schema": "bitcoinvero-price-input-identity-v2",
+  "role": "Private daily BTC/USD input recorded in original Metrics v4.4 manifest",
+  "file_name": "btc_usd_coinmetrics_20261104.csv",
+  "path_at_calculation": "/opt/mybot_data/price_usd/btc_usd_coinmetrics_20261104.csv",
+  "sha256": "f4b1dc839cf82f822cd7489b5f37fb806f4e805515576ecb34d1fcc988304a8b",
+  "bytes_on_operator_node": 164672,
+  "first_date_in_producer_manifest": "2010-07-18",
+  "last_date_in_producer_manifest": "2026-11-04",
+  "file_bytes_reverified_by_operator": true,
+  "acquisition_channel": null,
   "acquired_utc": null,
-  "api_metric": null,
-  "preprocessing_provenance": null,
-  "price_derived_series_included": false
+  "provider_attribution_verified": false,
+  "pricing_metric_and_exact_licence_verified": false,
+  "raw_price_observations_included": false,
+  "price_dependent_metrics_included": false,
+  "provenance_note": "Coin Metrics appears in filename, but exact acquisition and reuse rights have not been substantiated. This is only an input identifier; no price data is redistributed."
 }

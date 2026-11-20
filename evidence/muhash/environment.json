@@ -1,0 +1,49 @@
+{
+  "compiler": {
+    "command": "/usr/bin/g++",
+    "compiled_version": "11.5.0 20240719 (Red Hat 11.5.0-15)",
+    "driver_version": "g++ (GCC) 11.5.0 20240719 (Red Hat 11.5.0-15)",
+    "driver_version_output_sha256": "e72c2409d6de94b2d8fd9917a9d36ef64b23669e57f23837fcbd15f1bcd3dc36",
+    "flags": [
+      "-O3",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra"
+    ],
+    "link_flags": [
+      "-lcrypto"
+    ],
+    "resolved_executable": "/usr/bin/g++"
+  },
+  "linux": {
+    "machine": "x86_64",
+    "release": "5.14.0-734.el9.x86_64",
+    "sysname": "Linux",
+    "version": "#1 SMP PREEMPT_DYNAMIC Thu Aug 6 09:10:23 UTC 2026"
+  },
+  "native": {
+    "compiler_version": "11.5.0 20240719 (Red Hat 11.5.0-15)",
+    "cplusplus": 201703,
+    "libcrypto": {
+      "headers_version": "OpenSSL 3.5.7 9 Jun 2026",
+      "runtime_version": "OpenSSL 3.5.7 9 Jun 2026",
+      "runtime_version_number": 810549360
+    },
+    "schema": "bitcoinvero-native-environment-v1"
+  },
+  "python": {
+    "executable": "/root/mybot/.venv/bin/python",
+    "implementation": "cpython",
+    "resolved_executable": "/root/mybot/.venv/bin/python",
+    "version": "3.9.25 (main, Jul 13 2026, 00:00:00) \n[GCC 11.5.0 20240719 (Red Hat 11.5.0-14)]"
+  },
+  "schema": "bitcoinvero-muhash-environment-v1",
+  "scope": "OBSERVED_VERSIONS_AND_TOOL_HASHES_NOT_A_FULL_DYNAMIC_DEPENDENCY_LOCK",
+  "tool": {
+    "helper_binary_sha256": "eb24332945dfe5423326807efa108283ff2d6d1b29ee8c12484afb51a39bd39f",
+    "native_source_sha256": "2d6d0adbd12dac34ba8ec40ad611198817e7f3d7468ebd62c6f4404e7e2566dd",
+    "script": "/root/BitcoinVero_MuHash_Standalone_v1_0_4/muhash_standalone.py",
+    "script_sha256": "439e29b7c8af5f0918db11750e855c39c3cbe807b626344787417c66f1a19dde",
+    "version": "1.0.4"
+  }
+}

@@ -1,0 +1,17 @@
+=== BITCOINVERO 2014 UTXO FORENSICS ===
+Creation block: 328875 2014-11-07T00:03:02+00:00 00000000000000001866fcc86548d0ce02980c5cafbebef31de3601c0ea043df
+Spending block: 328876 2014-11-06T23:57:14+00:00 000000000000000014957e9e22643209571d7e0519f0491d85614f3644c6eff6
+Block A transactions: 64
+Block B transactions: 909
+
+=== CROSS-DATE SPENDS ===
+Matching outpoints: 9
+All matched BTC: 10895.3826316
+Eligible BTC: 10895.3826316
+Expected BTC: 10895.3826316
+Difference, sats: 0
+RESULT: EXACT MATCH
+
+Evidence CSV: /root/o/bv_2014_cross_date_outpoints.csv
+Evidence SHA256: ae97a6f40fd7f665f4ef388e347dc62ddf105d0e39329c5fda20dfff4c09dd91
+READ ONLY: no production state changes

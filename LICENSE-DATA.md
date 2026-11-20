@@ -1,43 +1,36 @@
-# Data and accompanying material licence
+# Data and accompanying material licence — BitcoinVero UTXO metrics v2
 
 Copyright (c) 2026 Kirill Kiselev / BitcoinVero, to the extent applicable.
 
-The project-controlled rights in the following published materials are licensed
-under **Creative Commons Attribution 4.0 International (CC BY 4.0)**:
+**Creative Commons Attribution 4.0 International (CC BY 4.0)** applies to
+BitcoinVero-controlled rights in `data/onchain/*.csv`, `data/onchain_daily.csv`,
+`node_checkpoints.csv`, project-authored documentation and release metadata,
+and project-authored portions of the verification records in `evidence/`.
+For external materials, attribution or redistribution rights depend on the
+original rights holders; this notice does not purport to relicense their work.
 
-- `data/onchain/*.csv` and `data/onchain_daily.csv`;
-- `node_checkpoints.csv`;
-- project-authored documentation and release metadata, including `README.md`,
-  `RELEASE_NOTES.md`, `MANIFEST.json`, `SHA256SUMS`, the notes in `price/` and
-  `evidence/CODE_IDENTITY.md`;
-- project-authored verification reports and manifests in `evidence/original/`
-  and `evidence/context/`, only to the extent of rights controlled by BitcoinVero.
+- Licence: https://creativecommons.org/licenses/by/4.0/
+- Legal terms: https://creativecommons.org/licenses/by/4.0/legalcode.en
+- Attribution: “BitcoinVero UTXO daily metrics v2 — Kirill Kiselev / BitcoinVero,
+  https://bitcoinvero.com/”. Indicate modifications when required.
+- Historical v1: see GitLab tag `v1.0.0` for the exact earlier publication.
 
-Licence: https://creativecommons.org/licenses/by/4.0/
-Legal text: https://creativecommons.org/licenses/by/4.0/legalcode.en
+Blockchain facts themselves are not claimed as exclusive property. Bitcoin Core
+RPC data and any third-party records are included solely as factual/provenance
+material, not as grants of software licences or endorsements by their producers.
+Original v1 audit files under `evidence/original/` and `evidence/context/`
+remain as published and are not silently substituted for v2 audit evidence.
 
-Attribution: “BitcoinVero UTXO daily metrics v1 — Kirill Kiselev / BitcoinVero,
-https://bitcoinvero.com/”. Provide a licence link and indicate modifications when
-required. CC BY 4.0 permits commercial reuse subject to its terms.
+**Excluded from the CC BY grant:** raw Coin Metrics or other third-party price
+data, price-derived metrics (not distributed here), Bitcoin Core software,
+BitcoinVero calculator/auditor/verification-program source code (not bundled),
+and any rights not controlled by BitcoinVero. BitcoinVero source code is subject
+to its separately stated code licence, not CC BY 4.0 by implication.
 
-This notice does not claim exclusive rights in blockchain facts or impose
-restrictions where no permission is legally needed. Bitcoin Core RPC outputs in
-`evidence/core-rpc/` are operator-provided factual responses, supplied with source
-attribution and provenance notes. No rights in Bitcoin Core software are granted
-by this data notice.
+The v2 `price/` directory contains only identity metadata for a private BTC/USD
+input. Its provider licence and acquisition history remain unverified. No price
+observations or the eleven price-derived metric series are included.
 
-**Excluded from this licence:**
-
-- Coin Metrics source data and rights in any other third-party material;
-- price-derived metrics, including `data/price_derived/` and
-  `data/price_derived_daily.csv` (neither is included in this release);
-- BitcoinVero software, including the historical or current `utxo_metrics_v4`;
-  source code is not bundled and remains subject to BitcoinVero Educational Use
-  License 1.2 in the project repository;
-- Bitcoin Core software, whose software licence is separate.
-
-References to unbundled files in original evidence do not license those files.
-Preserve applicable third-party notices. Nothing here implies endorsement by
-Coin Metrics, Bitcoin Core developers or an outside auditor. The CC licence's
-disclaimer of warranties applies; methodology limitations are documented in the
-README.
+The internally scoped H127 STATE_CONSISTENCY certificate and separate MuHash
+MATCH are BitcoinVero/operator evidence, not an externally signed certification.
+SHA-256 values provide file identity, not an assurance of full history.

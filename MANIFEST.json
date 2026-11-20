@@ -1,274 +1,550 @@
 {
-  "schema": "bitcoinvero-dataset-manifest-v1",
+  "schema": "bitcoinvero-dataset-manifest-v2",
   "dataset": "BitcoinVero UTXO daily metrics",
-  "version": "1",
-  "created_utc": "2026-10-06",
+  "release": "v2.0.0",
+  "release_kind": "price-independent-UTXO-daily-history",
+  "source_archive_sha256": "a5dcff6f364ed5ebaa0b81646f5cc0fe3c2b6d2339bbabb7d4720c4a60118260",
   "range": {
     "start_date": "2009-01-03",
-    "end_date": "2020-02-16",
-    "days": 4062,
-    "end_height": 617698,
-    "end_block_hash": "000000000000000000095ad21001856998971c4951123d14276b5f13c45e83d8"
+    "end_date": "2026-09-23",
+    "daily_rows": 6473,
+    "end_height": 968206,
+    "end_block_hash": "00000000000000000000014b8c7f91bbf877876ca6b709a3e167a1fa3d42362f",
+    "terminal_UTC_day_complete_claimed": false,
+    "end_block_time_utc": "2026-09-23T01:06:32+00:00"
   },
-  "core_aggregate_checks": [
-    {
-      "height": 617698,
-      "status": "AGGREGATES_MATCH"
-    },
-    {
-      "height": 663917,
-      "status": "AGGREGATES_MATCH"
-    }
-  ],
-  "full_set_match_claimed": false,
-  "packaging_revision": "onchain-only-1",
-  "release_kind": "historical-onchain-data-with-verification-evidence",
   "series_count": 16,
-  "daily_boundary_heights_available": false,
-  "terminal_utc_day_complete_claimed": false,
-  "external_independent_audit_claimed": false,
-  "primary_evidence": {
-    "metrics_manifest": "evidence/original/utxo_metrics_v4_manifest.json",
-    "project_audit_617698": "evidence/original/audit_v51_5_3_617698_20260915T093950Z_e30ff9c5.json",
-    "project_audit_663917": "evidence/original/audit_v51_5_4_663917_20260929T074432Z_a1088393.json",
-    "chain_guard_617698": "evidence/original/audit_v51_5_4_core_chain_617698_OK_20260915T120604Z_816c4806.json"
+  "source_metrics_manifest": "evidence/utxo_metrics_v4_manifest.json",
+  "source_metrics_validation_status": "COMPUTED_WITH_LIMITED_VALIDATION",
+  "source_metrics_certified": false,
+  "audit": {
+    "source_metrics_manifest_independent_history_audit": "NOT_PERFORMED",
+    "source_metrics_manifest_current_live_recertification": "NOT_PERFORMED",
+    "source_metrics_manifest_certified": false,
+    "separate_state_certificate": {
+      "scope": "INTERNAL_STATE_CONSISTENCY_ONLY",
+      "level": "STATE_CONSISTENCY",
+      "status": "CERTIFIED",
+      "certified_utc": "2026-11-19T18:52:43.185504+00:00",
+      "certificate_id": "BV-STATE-968206-82901d7f719640979369be9c59f2d413",
+      "registry_event": "evidence/auditor/certificate/registry/events/0000000001-a51979b4953d7579a5c448282b623240543bb3fcb50636b0e022cddf1b9123d5.json",
+      "event_sha256": "a51979b4953d7579a5c448282b623240543bb3fcb50636b0e022cddf1b9123d5",
+      "bound_report": "evidence/auditor/certificate/audit/reports/audit_result_82901d7f719640979369be9c59f2d413.json",
+      "bound_report_sha256": "57861716564bf67ba500a26ab622174669ff073f48162f294ad0646fd3c10b57",
+      "full_history_certification": false,
+      "operational_assumptions_independently_verified": false,
+      "p12_p15_independent_history_in_certified_run": "NOT_EVALUATED",
+      "owned_process_return_code": 0,
+      "prepared_engine_return_code": 2,
+      "digitally_signed": false,
+      "third_party_certification": false
+    },
+    "separate_bitcoin_core_muhash": {
+      "status": "MATCH",
+      "height": 968206,
+      "differences": [],
+      "result_path": "evidence/muhash/result.json",
+      "result_sha256": "e3ef4501751ba61f60121288f9d7424cae1b261ea6d293fcb745e52aa406973e",
+      "core_reference_path": "evidence/muhash/core-reference.json",
+      "muhash": "306b7e860a4f2718a10ba74a3368df55523b6dc0835d5dc452c767214018f33f",
+      "full_history_certification": false,
+      "full_verify": "NOT_PERFORMED"
+    },
+    "external_audit_claimed": false
   },
-  "metrics_code": {
-    "recorded_version": "utxo_metrics_v4-r4-v50-r12.9-prod",
-    "expected_sha256": "1bbed0fcbbd0872a127e3ad99c1a5a326340d071f08d8eda632557317dc04dc1",
-    "exact_file_included": false,
-    "immutable_revision": null,
-    "byte_exact_reproduction_status": "NOT_ESTABLISHED",
-    "details": "evidence/CODE_IDENTITY.md"
+  "stage": {
+    "manifest": "evidence/stage_release_0_968206.json",
+    "sha256": "2e7359db5990c28ef9f05b08e7c089ab161a2ba9ea8eaa7ada1bfa2792f3747e"
   },
-  "rpc_provenance": {
-    "source": "operator-supplied terminal responses; packaged JSON transcription",
-    "reported_capture_date": "2026-10-06",
-    "observed_client_version": "31.1.0",
-    "running_daemon_version_at_capture": null,
-    "direct_rpc_byte_capture": false,
-    "details": "evidence/core-rpc/COMMAND.txt"
+  "state": {
+    "height": 968206,
+    "block_hash": "00000000000000000000014b8c7f91bbf877876ca6b709a3e167a1fa3d42362f",
+    "live_utxo_count": 165204813,
+    "live_value_sats": 2008791675380694,
+    "checkpoint_sha256": "af865e7e8654126c68fe14c038d43b393eddd1821b6e8f55db00483fbef8f7d1",
+    "meta_sha256": "b9d9af0df9d228cb49deb7995c888ac5d6713ca8cb850b5211e1ba459544ae52"
   },
-  "price_data": {
-    "source_observations_included": false,
-    "price_derived_series_included": false,
-    "historical_identity_metadata": "price/PRICE_SOURCE.json",
-    "acquisition_provenance_verified": false,
-    "notice": "price/NOTICE.md"
-  },
-  "licences": {
-    "project_controlled_data_and_materials": "CC-BY-4.0; scope and exclusions in LICENSE-DATA.md",
-    "bitcoinvero_source_code": "not included; BitcoinVero Educational Use License 1.2",
-    "unbundled_coin_metrics_data": "no rights granted by this package"
-  },
+  "price_source_observations_included": false,
+  "price_derived_series_included": false,
+  "licence": "CC BY 4.0 for project-controlled price-independent data; see LICENSE-DATA.md",
+  "price_source_metadata": "price/PRICE_SOURCE.json",
+  "historical_v1_git_tag": "v1.0.0",
+  "publishing_layout": "existing GitLab main root (updated in place)",
+  "release_file_inventory_scope": "full resulting GitLab tree, including byte-preserved v1 evidence retained in existing repository",
+  "overlay_requires_existing_v1_evidence": true,
+  "calendar_inversion": "resolved per evidence/validation/2014-11-06_07, offline validation of operator-provided RPC exports; no external full-history certification",
+  "bitcoin_core_checkpoint_csv": "node_checkpoints.csv",
   "files": [
     {
       "path": "LICENSE-DATA.md",
-      "sha256": "6f876036858efebc4164326430bf4b085a28d9da154eaa7b667e96defae8d4d9",
-      "bytes": 2221
+      "sha256": "fa3bf8867fe95d7af5b70b9cccca4cbdaf19d15d68641756c0b80b1f946c2ec6",
+      "bytes": 2207
     },
     {
       "path": "README.md",
-      "sha256": "d88d82cddc0e05f6ea5909311f35c3f5ba72692e7965e17e26a87618b37bc976",
-      "bytes": 15140
+      "sha256": "e65eadaef2451df54aee636015d326af525e6868ece5e1451109236e148f9527",
+      "bytes": 15139
     },
     {
       "path": "RELEASE_NOTES.md",
-      "sha256": "1aa807b2df86940e2df008602db20c56943180449f2d012ae67072df99de11bf",
-      "bytes": 2304
+      "sha256": "41b26228c8bfcebe4c27de19a9e8a3cd44162aa0aa7e71f58779af1b6919c578",
+      "bytes": 3668
     },
     {
       "path": "data/onchain/utxo_cdd.csv",
-      "sha256": "6c23f35be4f25d9adc8de291284604f86b20d0c20c180649597c6db3e2a92a63",
-      "bytes": 115470,
-      "rows": 4062
+      "sha256": "0d74c2b0781f37a19aa04c22974b937d691374e32098cb7d9d8e43904ead758c",
+      "bytes": 186095,
+      "rows": 6473,
+      "column_names": [
+        "timestamp",
+        "value"
+      ]
     },
     {
       "path": "data/onchain/utxo_closed_btc.csv",
-      "sha256": "2359be092337b78d1921673919759caad58ea813c1e714a54e97c11ca25e9fc3",
-      "bytes": 104672,
-      "rows": 4062
+      "sha256": "591f5f32bcc4d136d421e3b0698ccda76eadbecc4fabd16f496c40b665685af7",
+      "bytes": 170621,
+      "rows": 6473,
+      "column_names": [
+        "timestamp",
+        "value"
+      ]
     },
     {
       "path": "data/onchain/utxo_created_btc.csv",
-      "sha256": "d76414eb8bc3e5d4501a07534d9f8aa28c773f3e4d48d06fb01709d35d146cb0",
-      "bytes": 105592,
-      "rows": 4062
+      "sha256": "ed9fbe245351000b1cd2c26a9b96b2f4037a21d182d8d9fc33d5319dbe55bc5c",
+      "bytes": 171530,
+      "rows": 6473,
+      "column_names": [
+        "timestamp",
+        "value"
+      ]
     },
     {
       "path": "data/onchain/utxo_dormancy.csv",
-      "sha256": "23a6be8ed446eef5cea108f20437123c00c8e98f11d952ece4fc76b2a0f2d657",
-      "bytes": 114824,
-      "rows": 4062
+      "sha256": "e27d230dfb7326e65977be8b88343e585589f71c2d7aa1a99fcd45aff0ce8933",
+      "bytes": 185678,
+      "rows": 6473,
+      "column_names": [
+        "timestamp",
+        "value"
+      ]
     },
     {
       "path": "data/onchain/utxo_hodl_0_1d.csv",
-      "sha256": "3b5d13002f7271a16e17ab5965381f672d37d7bcd476fffa6d99cf329241246a",
-      "bytes": 128799,
-      "rows": 4062
+      "sha256": "a9839abd562758216a9d3f2178cac8d08acbb30291536f0db0ba9679149e2432",
+      "bytes": 205611,
+      "rows": 6473,
+      "column_names": [
+        "timestamp",
+        "value"
+      ]
     },
     {
       "path": "data/onchain/utxo_hodl_1d_1w.csv",
-      "sha256": "1d02503b4f23fabfddc784bfe48bb4865701f68ca766f7019b8dd5ad9fd7da99",
-      "bytes": 127037,
-      "rows": 4062
+      "sha256": "b4e570c6255ad38b2700be9b1d17804654fbf7590e3430ef9aac2ddc18000484",
+      "bytes": 203158,
+      "rows": 6473,
+      "column_names": [
+        "timestamp",
+        "value"
+      ]
     },
     {
       "path": "data/onchain/utxo_hodl_1m_3m.csv",
-      "sha256": "2474838a92cedaba337c51ae32e6bd31271d739ae16392d8a6efb694057c0e44",
-      "bytes": 124354,
-      "rows": 4062
+      "sha256": "d4045e24b00d5b7af80b7307e7056e41e74fa20645e84214e8e04eb83902b7f8",
+      "bytes": 198880,
+      "rows": 6473,
+      "column_names": [
+        "timestamp",
+        "value"
+      ]
     },
     {
       "path": "data/onchain/utxo_hodl_1w_1m.csv",
-      "sha256": "fd7547a34aa0672c2362f31b15c9e239e570d68c879d5c817e6e3ca9d78d1151",
-      "bytes": 125386,
-      "rows": 4062
+      "sha256": "a44c694aee3837ad803d71b31c47be7337bfd86cede1aec51b35c2beb331eff8",
+      "bytes": 200478,
+      "rows": 6473,
+      "column_names": [
+        "timestamp",
+        "value"
+      ]
     },
     {
       "path": "data/onchain/utxo_hodl_1y_2y.csv",
-      "sha256": "0b91f0f00631e106c6343afa5435242f4df4ead36462f99c7f02357dd97f6a40",
-      "bytes": 118717,
-      "rows": 4062
+      "sha256": "9ccc9c159bc382084e8f4d82428e2a98e1c20c519ab9369a5f095d3f4a0283bc",
+      "bytes": 192873,
+      "rows": 6473,
+      "column_names": [
+        "timestamp",
+        "value"
+      ]
     },
     {
       "path": "data/onchain/utxo_hodl_2y_plus.csv",
-      "sha256": "501e85ee78b9391a4f2b15392f24c28ba9a2f52bae727dd1ac4278abcc1c5bb3",
-      "bytes": 112408,
-      "rows": 4062
+      "sha256": "ea0a2e2f1e8c3bc4170893080c0f596e2a19a8f6f0cdb4c8d1a35090bf5c6756",
+      "bytes": 185176,
+      "rows": 6473,
+      "column_names": [
+        "timestamp",
+        "value"
+      ]
     },
     {
       "path": "data/onchain/utxo_hodl_3m_6m.csv",
-      "sha256": "95e6d9118125649ae9bbc7aac93c010bcf2a906cf53f3af34341885b0d71cfaa",
-      "bytes": 123423,
-      "rows": 4062
+      "sha256": "c43af50a00c09f4d859a1f2a3e74f9ade6c1742c49e93917d40d42e1c0e501d8",
+      "bytes": 197881,
+      "rows": 6473,
+      "column_names": [
+        "timestamp",
+        "value"
+      ]
     },
     {
       "path": "data/onchain/utxo_hodl_6m_1y.csv",
-      "sha256": "2afb405f404514676812d890c27ece37a594d8790b4507753fdbdf3b8369cd90",
-      "bytes": 121758,
-      "rows": 4062
+      "sha256": "807a8b2b55cb0225990bfba55b42ad9e4990131e9f8c26d133b3a551e61a8036",
+      "bytes": 195993,
+      "rows": 6473,
+      "column_names": [
+        "timestamp",
+        "value"
+      ]
     },
     {
       "path": "data/onchain/utxo_live_utxo_count.csv",
-      "sha256": "f93aae4fb96125df798b8f5d11dd82d02916bdf3db0e8f0bbfaebb5e6725bbd6",
-      "bytes": 85579,
-      "rows": 4062
+      "sha256": "b9c6b0f7107f2bd411b6ec92c22e4234eb4f1129b62c383ee2a0f5b880ee1f63",
+      "bytes": 139838,
+      "rows": 6473,
+      "column_names": [
+        "timestamp",
+        "value"
+      ]
     },
     {
       "path": "data/onchain/utxo_raw_inputs.csv",
-      "sha256": "cc8d7c01921f999dd3dac0b4561efda9863b93f00998474059a1a1a8f06207d5",
-      "bytes": 77337,
-      "rows": 4062
+      "sha256": "3be91c77b4e51cd60c39509d6565c0f7d5eacc059617f9b00635606489385759",
+      "bytes": 126427,
+      "rows": 6473,
+      "column_names": [
+        "timestamp",
+        "value"
+      ]
     },
     {
       "path": "data/onchain/utxo_spent_btc.csv",
-      "sha256": "655a1a613dd41a55c8c73a5ad56ec4c16ee4c5954f7bb0f03889f628071a9efd",
-      "bytes": 104672,
-      "rows": 4062
+      "sha256": "b90b1cee64bec74ca2ba9b991e5864ef77d44d39e75f521e82216448128af10c",
+      "bytes": 170615,
+      "rows": 6473,
+      "column_names": [
+        "timestamp",
+        "value"
+      ]
     },
     {
       "path": "data/onchain/utxo_supply_btc.csv",
-      "sha256": "6b7e1511dcef8f5889aca8ba9184782e208f7de0e69188d2939dadf51a1d7529",
-      "bytes": 109960,
-      "rows": 4062
+      "sha256": "88c49d24ece549a7b248b2aa5ba6a6f596783a12a39f1d679baa73f5f9f6e581",
+      "bytes": 179615,
+      "rows": 6473,
+      "column_names": [
+        "timestamp",
+        "value"
+      ]
     },
     {
       "path": "data/onchain_daily.csv",
-      "sha256": "e8dae3aa663bec46f8848a8bc09c7ded1d2e35bb8a8cf649d653a0ff91882ee9",
-      "bytes": 1133743,
-      "rows": 4062
+      "sha256": "3ad5f40c86988e525f06b3e7db67a5494c9e911f0bcba9abc31c6dda9be54d0b",
+      "bytes": 1848820,
+      "rows": 6473,
+      "column_names": [
+        "date",
+        "cdd",
+        "closed_btc",
+        "created_btc",
+        "dormancy",
+        "hodl_0_1d",
+        "hodl_1d_1w",
+        "hodl_1m_3m",
+        "hodl_1w_1m",
+        "hodl_1y_2y",
+        "hodl_2y_plus",
+        "hodl_3m_6m",
+        "hodl_6m_1y",
+        "live_utxo_count",
+        "raw_inputs",
+        "spent_btc",
+        "supply_btc"
+      ]
     },
     {
       "path": "evidence/CODE_IDENTITY.md",
       "sha256": "1f15e6501f686cb31e2a1fc58c97d34c2fdd535549ab484ab400b3f270fc9fd0",
-      "bytes": 1783
+      "bytes": 1783,
+      "preserved_from_v1_main": true
+    },
+    {
+      "path": "evidence/README.md",
+      "sha256": "6043620646ff1a3c3dc7acc21f054154cd5067a3782d4386724f09320eea7ab3",
+      "bytes": 3983
+    },
+    {
+      "path": "evidence/auditor/certificate/audit/reports/audit_result_82901d7f719640979369be9c59f2d413.json",
+      "sha256": "57861716564bf67ba500a26ab622174669ff073f48162f294ad0646fd3c10b57",
+      "bytes": 8209
+    },
+    {
+      "path": "evidence/auditor/certificate/audit/reports/audit_result_82901d7f719640979369be9c59f2d413.json.sha256",
+      "sha256": "36594d4d14a8744b7c352226cc7082315e69ddd90da4d67b8e63bc4ce503cdad",
+      "bytes": 117
+    },
+    {
+      "path": "evidence/auditor/certificate/audit/reports/audit_result_82901d7f719640979369be9c59f2d413.terminal.json",
+      "sha256": "46b1a870261146a57271f53d2d386a17ca7b00e89410b9c7036a7d8057ae0812",
+      "bytes": 388
+    },
+    {
+      "path": "evidence/auditor/certificate/audit/reports/audit_v51_6_0_selected_82901d7f719640979369be9c59f2d413.complete.json",
+      "sha256": "9900c80360deb9cf51e552d1c3eba29aeac2264e169318577f9b2f32b4064897",
+      "bytes": 727
+    },
+    {
+      "path": "evidence/auditor/certificate/audit/reports/audit_v51_6_0_selected_82901d7f719640979369be9c59f2d413.json",
+      "sha256": "1107a0d20b3896c22eb8dd98a893a528c8546cd4844410cb2f75bb642ba20eb0",
+      "bytes": 17837
+    },
+    {
+      "path": "evidence/auditor/certificate/audit/reports/audit_v51_6_0_selected_82901d7f719640979369be9c59f2d413.json.sha256",
+      "sha256": "5e89c1b2f6dc1f5961ec64adc45a5943d41b105143633db698e6aeaf1aec45de",
+      "bytes": 127
+    },
+    {
+      "path": "evidence/auditor/certificate/audit/reports/audit_v51_6_0_selected_82901d7f719640979369be9c59f2d413.md",
+      "sha256": "c5c669e557d1ffa8124a705c7b4fbc2345e878c619101d78a32944c3c4fab014",
+      "bytes": 2541
+    },
+    {
+      "path": "evidence/auditor/certificate/audit/reports/audit_v51_6_0_selected_82901d7f719640979369be9c59f2d413.md.sha256",
+      "sha256": "fc9b8a599bc5bebf8e57854143b4259e19095a3c8352d050b45a3695c60a5745",
+      "bytes": 125
+    },
+    {
+      "path": "evidence/auditor/certificate/audit/reports/audit_v51_6_0_selected_82901d7f719640979369be9c59f2d413.terminal-receipt.json",
+      "sha256": "dce75eaa8bc886d73e48175e6934cd046a60e5ae67faae306deaef8ebadf3dbd",
+      "bytes": 858
+    },
+    {
+      "path": "evidence/auditor/certificate/registry/events/0000000001-a51979b4953d7579a5c448282b623240543bb3fcb50636b0e022cddf1b9123d5.json",
+      "sha256": "a51979b4953d7579a5c448282b623240543bb3fcb50636b0e022cddf1b9123d5",
+      "bytes": 28467
+    },
+    {
+      "path": "evidence/auditor/certificate/registry/run/ack.stdout",
+      "sha256": "dd54628aff8b2d4e767af6ba005b1bac109cee7d0b4400cb1d6ce1d3de87436e",
+      "bytes": 7703
+    },
+    {
+      "path": "evidence/auditor/certificate/registry/run/actual_exit.json",
+      "sha256": "2d56ee4d21ed7acf76961585409587d893fca7bd77f7803c0c76be86101a8b21",
+      "bytes": 225
+    },
+    {
+      "path": "evidence/auditor/certificate/registry/run/exit.json",
+      "sha256": "3214a698b1d157cb4985d836c2f1b12f302c69cc77f77905ecce5f9bb9d40b6d",
+      "bytes": 358
+    },
+    {
+      "path": "evidence/checkpoint.bin",
+      "sha256": "af865e7e8654126c68fe14c038d43b393eddd1821b6e8f55db00483fbef8f7d1",
+      "bytes": 180
     },
     {
       "path": "evidence/context/audit_v51_5_2_FATAL_20260915T052915Z_8f98a364.json",
       "sha256": "bc54ba11de668d015c7104b0ab2364cbfd38d18fbdc2f2d0b96366d0a6f485f4",
-      "bytes": 874825
+      "bytes": 874825,
+      "preserved_from_v1_main": true
     },
     {
       "path": "evidence/core-rpc/COMMAND.txt",
       "sha256": "4601257b649376f2bb2c579a4c1046be57ed5e5e91cebf0d14b66958eee6e1e3",
-      "bytes": 1809
+      "bytes": 1809,
+      "preserved_from_v1_main": true
     },
     {
       "path": "evidence/core-rpc/core_617698.json",
       "sha256": "59df77d53bb30b5835d1bf97c53bd252113f9b9afb3ea200e761519d16b93604",
-      "bytes": 635
+      "bytes": 635,
+      "preserved_from_v1_main": true
     },
     {
       "path": "evidence/core-rpc/core_663917.json",
       "sha256": "4f708028221f0144a45e309e8640dab0c3ff93ec661da025934d5c55de5f6ca9",
-      "bytes": 636
+      "bytes": 636,
+      "preserved_from_v1_main": true
+    },
+    {
+      "path": "evidence/muhash/core-reference.json",
+      "sha256": "c3000d5025d38fa10b7dd7473671654e624eb8227b17d82d91805e4b1d63463b",
+      "bytes": 475
+    },
+    {
+      "path": "evidence/muhash/environment.json",
+      "sha256": "e06bc99d9619d4c07834838ad5ccaded22c4a11093730c61090b421142de69cd",
+      "bytes": 1764
+    },
+    {
+      "path": "evidence/muhash/result.json",
+      "sha256": "e3ef4501751ba61f60121288f9d7424cae1b261ea6d293fcb745e52aa406973e",
+      "bytes": 5077
     },
     {
       "path": "evidence/original/audit_v51_5_3_617698_20260915T093950Z_e30ff9c5.json",
       "sha256": "f04487b2479b9a3147eddfb5a1d04652e825fd8176fc2a8956c4b9d27a54b37c",
-      "bytes": 877121
+      "bytes": 877121,
+      "preserved_from_v1_main": true
     },
     {
       "path": "evidence/original/audit_v51_5_3_617698_20260915T093950Z_e30ff9c5.json.sha256",
       "sha256": "ce1c67fc4b9fbd699b0c27fe0b4792e1dd7d3e28388a538df931aa8a3773cea5",
-      "bytes": 118
+      "bytes": 118,
+      "preserved_from_v1_main": true
     },
     {
       "path": "evidence/original/audit_v51_5_3_617698_20260915T093950Z_e30ff9c5.md",
       "sha256": "1ea5dfc50bd776b3f3d40c05adc469c9f4759323dfa80ed7cc7353fa2f724f9f",
-      "bytes": 1606
+      "bytes": 1606,
+      "preserved_from_v1_main": true
     },
     {
       "path": "evidence/original/audit_v51_5_3_617698_20260915T093950Z_e30ff9c5.md.sha256",
       "sha256": "546da4fd85f26a3163664864a31444956339e914140d07d0f4158a87c8367542",
-      "bytes": 116
+      "bytes": 116,
+      "preserved_from_v1_main": true
     },
     {
       "path": "evidence/original/audit_v51_5_4_663917_20260929T074432Z_a1088393.json",
       "sha256": "05155f8fb5d228555c91cd2cd0cb85d45224806803afedf854da2e32c1c1aa7f",
-      "bytes": 943032
+      "bytes": 943032,
+      "preserved_from_v1_main": true
     },
     {
       "path": "evidence/original/audit_v51_5_4_663917_20260929T074432Z_a1088393.json.sha256",
       "sha256": "59903e5cfcef929a1b65d2e72a6906b35a025d396ebb5da70092b6360e5ed058",
-      "bytes": 118
+      "bytes": 118,
+      "preserved_from_v1_main": true
     },
     {
       "path": "evidence/original/audit_v51_5_4_663917_20260929T074432Z_a1088393.md",
       "sha256": "c6a8768f5e002d151b385fe416ef347cb0c7879f5adffe4f42bbeb805dfe7b1e",
-      "bytes": 1647
+      "bytes": 1647,
+      "preserved_from_v1_main": true
     },
     {
       "path": "evidence/original/audit_v51_5_4_663917_20260929T074432Z_a1088393.md.sha256",
       "sha256": "ee5d8193b7c510bf34f025d618cbd569558f5b4dc293a49c2675cc930621a8fc",
-      "bytes": 116
+      "bytes": 116,
+      "preserved_from_v1_main": true
     },
     {
       "path": "evidence/original/audit_v51_5_4_core_chain_617698_OK_20260915T120604Z_816c4806.json",
       "sha256": "7f04d9baf0b975d5be7db63216ee993621f5de767c00f7b8a18b61710fafb99c",
-      "bytes": 1842
+      "bytes": 1842,
+      "preserved_from_v1_main": true
     },
     {
       "path": "evidence/original/utxo_metrics_v4_manifest.json",
       "sha256": "4b8d4a145527179270158e5522b7fbba2096f17f3b602b9e286cea976da178bf",
-      "bytes": 13581
+      "bytes": 13581,
+      "preserved_from_v1_main": true
+    },
+    {
+      "path": "evidence/provenance/apply_ledger_v2.jsonl",
+      "sha256": "c0aac39a28d9a1031dcfefead8371899ba183fdd024a5b4c39c5d5a992227282",
+      "bytes": 1257037
+    },
+    {
+      "path": "evidence/provenance/recovery_ledger_v2.jsonl",
+      "sha256": "ff170eeaac3329432c91094f5b408f725c64f0b4fba30af7f5c30109973e5614",
+      "bytes": 3437
+    },
+    {
+      "path": "evidence/provenance/source_lineage_v1.jsonl",
+      "sha256": "3374f7d4d090bbbb49d9139211b93f4c335c2bd2de2d5292fa081985747b879e",
+      "bytes": 2622
+    },
+    {
+      "path": "evidence/provenance/stage_release_0_968206.windows.tsv",
+      "sha256": "1288f474eae296b119dec58fe3c5a8eccb40804acfd7bc9d76b02ba7db73e60b",
+      "bytes": 784637
+    },
+    {
+      "path": "evidence/stage_release_0_968206.json",
+      "sha256": "2e7359db5990c28ef9f05b08e7c089ab161a2ba9ea8eaa7ada1bfa2792f3747e",
+      "bytes": 1795
+    },
+    {
+      "path": "evidence/state.meta",
+      "sha256": "b9d9af0df9d228cb49deb7995c888ac5d6713ca8cb850b5211e1ba459544ae52",
+      "bytes": 192
+    },
+    {
+      "path": "evidence/utxo_metrics_v4_manifest.json",
+      "sha256": "77b4f60ff6aa9ec3dd54881b54537160b5594acf441fc36e71d4efa0692371d7",
+      "bytes": 22864
+    },
+    {
+      "path": "evidence/validation/2014-11-06_07/2014-11-06_07_calendar_inversion.md",
+      "sha256": "6396546d25b554df212605ecd6145e96de305ea3ec30fa765f6cded47038962f",
+      "bytes": 7840
+    },
+    {
+      "path": "evidence/validation/2014-11-06_07/SHA256SUMS",
+      "sha256": "a2388cfe8f460683da94f03f6c9d97948dcf92e3134a85543475445561a4f8f5",
+      "bytes": 608
+    },
+    {
+      "path": "evidence/validation/2014-11-06_07/original/bv_2014_cross_date_outpoints.csv",
+      "sha256": "ae97a6f40fd7f665f4ef388e347dc62ddf105d0e39329c5fda20dfff4c09dd91",
+      "bytes": 1394
+    },
+    {
+      "path": "evidence/validation/2014-11-06_07/original/bv_2014_headers.csv",
+      "sha256": "28c0dd6d4e8d679292644dde2e2a5efdab3934954a80f1596837d9b7f7913871",
+      "bytes": 60652
+    },
+    {
+      "path": "evidence/validation/2014-11-06_07/original/bv_2014_inversions_report.txt",
+      "sha256": "16f4ed94f51e10d2f5bacfaead035f14b207553c6addcc7b5800dd685ce77a1c",
+      "bytes": 862
+    },
+    {
+      "path": "evidence/validation/2014-11-06_07/original/bv_2014_utxo_transfer_report.txt",
+      "sha256": "9a3d1a7bbc5913c373d3b33f92ba0258f260719fbce72f7b370f07d5499b6146",
+      "bytes": 672
+    },
+    {
+      "path": "evidence/validation/2014-11-06_07/validation_summary.json",
+      "sha256": "37d547dc3f66d61f16fbf345bb40e582a5687cdf259a99a933b30e741018f770",
+      "bytes": 3117
+    },
+    {
+      "path": "evidence/validation_summary.json",
+      "sha256": "9d121f6e64b0adf06fc5d864e6e6c861e977482985da6a0a4ba6d3899c69c823",
+      "bytes": 4101
     },
     {
       "path": "node_checkpoints.csv",
-      "sha256": "b8e53f71f4afc3a1663cb169b9f5d2dcbf1b2be2519468a31f099f5923540058",
-      "bytes": 1191,
-      "rows": 2
+      "sha256": "e58e66b656314fe65f17699bb70a10edd51838f7a13013d5d5340a6a56c795dd",
+      "bytes": 1606,
+      "rows": 3
     },
     {
       "path": "price/NOTICE.md",
-      "sha256": "a2051853f0aea3e4c0bcc862b175d141d4d8a4e8d990a744272dcf6d86d3994e",
-      "bytes": 1730
+      "sha256": "46e54328f37dc1189792e9a9cd4e440c14ea76879a24e7cb095f45da43d9c2bc",
+      "bytes": 2178
     },
     {
       "path": "price/PRICE_SOURCE.json",
-      "sha256": "f19bb83188b9842402812aa35753f07a287b133d152e8c868345a23c9771170c",
-      "bytes": 868
+      "sha256": "28e1176cb5c101df4b880b314399b42bc29f89c3962570071dd4c1bbf560b928",
+      "bytes": 970
     }
   ]
 }

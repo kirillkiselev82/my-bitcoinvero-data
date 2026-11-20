@@ -1,0 +1,44 @@
+{
+  "created_utc": "2026-09-25T07:44:28.368750+00:00",
+  "end_block_time": 1790125592,
+  "end_hash": "00000000000000000000014b8c7f91bbf877876ca6b709a3e167a1fa3d42362f",
+  "end_height": 968206,
+  "end_median_time_past": 1790119888,
+  "legacy_baseline": {
+    "end_hash": "000000000000000000095ad21001856998971c4951123d14276b5f13c45e83d8",
+    "end_height": 617698,
+    "global_manifest_sha256": "3dc4e285947651d0c36bf5564c6f424d620947d29f36154ffa1cbb1dbe94860a"
+  },
+  "producer": {
+    "build_stage_script_sha256": "f826507fd615b1baa0a5aefd2ba218b8f607e22baa83a2cb197447f2f70d02df",
+    "decoder_script_sha256": "a981378473ea41f157eaf94c7de233ddbdab1985a4a618fd3962696c6cfa3ec9",
+    "duckdb_version": "1.4.4",
+    "extractor_reference_sha256": "7309d10a509d518738c94e9604e2a9f8dba1cc7e190a5f21f3a8df01146f5730"
+  },
+  "release_complete": true,
+  "schema": "mybot-stage2-release-v2",
+  "source_catalog": {
+    "ledger_tail_sha256": "c05878b61bb4d51019896bd8d0a069875febe41b0f88612463e471aa375a5167",
+    "path": "/opt/mybot_data/etl/utxo_core_v2/source/source_catalog.duckdb"
+  },
+  "start_height": 0,
+  "totals": {
+    "blocks": 968207,
+    "inputs": 3504556496,
+    "outputs": 3936231162,
+    "transactions": 1444850128
+  },
+  "validation": {
+    "all_windows_release_complete": true,
+    "height_coverage_contiguous": true,
+    "legacy_plus_v2_boundary_exact": true,
+    "parquet_content_sha256_bound": true,
+    "window_manifest_sha256_bound": true
+  },
+  "window_count": 970,
+  "windows_fingerprint_sha256": "546c02cdfe75ae35f4f991f34cf38b44496445e820feef14416e7379761b6511",
+  "windows_tsv": {
+    "path": "/opt/mybot_data/etl/utxo_core_v2/stage/manifests/releases/stage_release_0_968206.windows.tsv",
+    "sha256": "1288f474eae296b119dec58fe3c5a8eccb40804acfd7bc9d76b02ba7db73e60b"
+  }
+}

@@ -1,0 +1,454 @@
+{
+  "apply_eligible": false,
+  "audit_id": "82901d7f719640979369be9c59f2d413",
+  "certification": {
+    "blocking": [
+      "SELECTED_DIAGNOSTICS_ONLY"
+    ],
+    "full_certification": false,
+    "level": "NOT_CERTIFIED"
+  },
+  "check_plan": {
+    "dependencies": [],
+    "effective": [
+      "metadata",
+      "state",
+      "fees-reward"
+    ],
+    "full_certification": false,
+    "heavy_enabled": true,
+    "heavy_source": "CLI",
+    "mandatory_safety": [
+      "shared_leases",
+      "read_only_inputs",
+      "header_checksums",
+      "capacity_and_bounds",
+      "identity_fences",
+      "owned_helper_cleanup"
+    ],
+    "mode": "full",
+    "plan_sha256": "35e8f34d00be46eeb0515577394c7cf17cb5657a2efde0c9a4c96cac4226d069",
+    "requested": [
+      "metadata",
+      "state",
+      "fees-reward"
+    ],
+    "schema": "bitcoinvero-audit-check-plan-v1",
+    "selection_source": "CLI"
+  },
+  "checks": {
+    "fees-reward": {
+      "coverage_status": "COMPLETE_FOR_SELECTED_STATE_CHECKS",
+      "independent_stage_comparison": "NOT_EVALUATED",
+      "proof_basis": "STATE_RECORDS",
+      "proof_strength": "STATE_DERIVED_CONSISTENCY",
+      "scope": "STATE_DERIVED_VALUE_CONSISTENCY",
+      "state_derived_fee_proof": {
+        "apply_eligible": false,
+        "coverage_status": "COMPLETE_FOR_SELECTED_STATE_CHECKS",
+        "fees_sats": "30070577923310",
+        "full_certification": false,
+        "independent_stage_comparison": "NOT_EVALUATED",
+        "normal_inputs": 3503588289,
+        "proof_basis": "STATE_RECORDS",
+        "proof_strength": "STATE_DERIVED_CONSISTENCY",
+        "scope": "STATE_DERIVED_FEE_CONSISTENCY",
+        "status": "OK",
+        "transactions_checked": 1443881921,
+        "transition_certification": false
+      },
+      "state_derived_reward_proof": {
+        "apply_eligible": false,
+        "blocks_checked": 968207,
+        "claimed_coinbase_sats": "2038882369578406",
+        "coverage_status": "COMPLETE_FOR_SELECTED_STATE_CHECKS",
+        "fees_sats": "30070577923310",
+        "full_certification": false,
+        "independent_stage_comparison": "NOT_EVALUATED",
+        "proof_basis": "STATE_RECORDS",
+        "proof_strength": "STATE_DERIVED_CONSISTENCY",
+        "scope": "STATE_DERIVED_REWARD_CONSISTENCY",
+        "status": "OK",
+        "subsidy_sats": "2008814687500000",
+        "transition_certification": false
+      },
+      "status": "OK",
+      "transition_certification": false
+    },
+    "full": {
+      "reason": "DISABLED_BY_SELECTION",
+      "reason_code": "SKIPPED_BY_OPERATOR",
+      "status": "SKIPPED"
+    },
+    "metadata": {
+      "result": {
+        "execution_authorized": false,
+        "expected_checks": [
+          "safety",
+          "resource_preflight",
+          "state_contract",
+          "supervisor_contract",
+          "stage_release",
+          "quick_invariants",
+          "state_scan",
+          "stage_sha",
+          "recovery_provenance",
+          "run_provenance",
+          "stage_semantics",
+          "core_stage_exact",
+          "legacy_aws",
+          "source_catalog",
+          "stage_rebuild",
+          "false_green_guard",
+          "reference_v40",
+          "core_chain_guard",
+          "bitcoin_core",
+          "stage_stable_snapshot",
+          "stable_snapshot",
+          "report"
+        ],
+        "full_certification": false,
+        "local_acceptance": "OPERATOR_ACCEPTED",
+        "profiles": "NOT_EVALUATED",
+        "readiness": "METADATA_IDENTITIES_CHECKED_ONLY",
+        "required_open_gates": [
+          "R14_HISTORY_ADAPTER",
+          "MEDIUM_VALUE_FEE_AND_SHADOW_WITNESS",
+          "FULL_LIFECYCLE_ACCEPTANCE"
+        ],
+        "resources": "READMISSION_REQUIRED_AT_RUN",
+        "resume": "NOT_CERTIFIED_BY_PREFLIGHT",
+        "scope": "BOUNDED_METADATA_PLAN_ONLY",
+        "source_assurance": {
+          "apply_eligible": false,
+          "byte_immutability": "NOT_ESTABLISHED",
+          "core_correctness": "NOT_EVALUATED",
+          "files": {},
+          "full_certification": false,
+          "kernel_measurements": 0,
+          "mode": "OBSERVATION_ONLY",
+          "payload_bytes_read": 0,
+          "schema": "bitcoinvero-audit-source-assurance-v1",
+          "snapshot_consistency": "NOT_ESTABLISHED",
+          "status": "NOT_ESTABLISHED"
+        },
+        "state_contract": {
+          "_r14_delivery": "/root/mybot/releases/v51-r14-dev16/utxo_pipeline_v51.py",
+          "_r14_evidence_dir": "/opt/mybot_data/etl/utxo_v51_new/evidence",
+          "bip30_seq_plus1": [
+            142784,
+            142842
+          ],
+          "block_hash": "00000000000000000000014b8c7f91bbf877876ca6b709a3e167a1fa3d42362f",
+          "capacities": {
+            "close": 3504560592,
+            "hash": 2064646144,
+            "out": 3936231162,
+            "tx": 1444850128
+          },
+          "close_count": 3503588291,
+          "core": "/opt/mybot_data/etl/utxo_v51_new/runtime/utxo_v50_dense_core_r13",
+          "core_sha256": "e844b24ea3db81112444b3dd7d7bc26c525afac3d6e6c0ddb69cc0edfd86b0f1",
+          "driver": "/opt/mybot_data/etl/utxo_v51_new/runtime/_pipeline.py",
+          "driver_contract": {
+            "lineage": "R14_DEV16",
+            "observed": {
+              "EMBEDDED_CORE_SOURCE_SHA256": "264a6274abc89a3d1e93a2e5a0a0ff655b9dcf73bef0788ed2cef604065c0fb4",
+              "EXPECTED_CORE_ID": "v50-dense-core-r13-integrated-0.1.0.dev7-stage5",
+              "VERSION": "v51-r14-worker-51.14.0.dev6"
+            },
+            "path": "/opt/mybot_data/etl/utxo_v51_new/runtime/_pipeline.py",
+            "sha256": "13088c39047206e0e71dcd510100ce9853f81ef941246aa425d39bc520087c3a",
+            "status": "OK"
+          },
+          "driver_sha256": "13088c39047206e0e71dcd510100ce9853f81ef941246aa425d39bc520087c3a",
+          "height": 968206,
+          "lineage": "R14_DEV16",
+          "live_count": 165204813,
+          "live_value_sats": 2008791675380694,
+          "meta_sha256": "b9d9af0df9d228cb49deb7995c888ac5d6713ca8cb850b5211e1ba459544ae52",
+          "out_count": 3936231162,
+          "record_sizes": {
+            "close": 24,
+            "hash_slot": 40,
+            "out": 32,
+            "tx": 56
+          },
+          "script_bytes": 97508179051,
+          "source_sha256": "2e7359db5990c28ef9f05b08e7c089ab161a2ba9ea8eaa7ada1bfa2792f3747e",
+          "state": "/opt/mybot_data/etl/utxo_v51_new/state",
+          "status": "OK",
+          "tx_count": 1444850128
+        },
+        "status": "INCOMPLETE",
+        "supervisor": {
+          "delivery_sha256": "d87cbb0fb074e0ebcae6b708d256eb9a3da4ece4bcfe43c8c65916b406067cc6",
+          "package_sha256": "84c963f583b45844f5ac72e776e89bcaf981db3727be7824cb7d0866fe312642",
+          "path": "/root/mybot/releases/v51-r14-dev16/utxo_pipeline_v51.py",
+          "scope": "STATIC_SOURCE_IDENTITY_ONLY",
+          "sha256": "97f7ebe30bf22098641da9a99aea86125efbbd39ffa41cd4691c35bb31fad016",
+          "status": "OK",
+          "supervisor_sha256": "97f7ebe30bf22098641da9a99aea86125efbbd39ffa41cd4691c35bb31fad016"
+        }
+      },
+      "scope": "BOUNDED_METADATA_IDENTITIES_ONLY",
+      "status": "OK"
+    },
+    "state": {
+      "independent_stage_comparison": "NOT_EVALUATED",
+      "proof_basis": "STATE_RECORDS",
+      "proof_strength": "STATE_DERIVED_CONSISTENCY",
+      "result": {
+        "all_outputs_sha256": "e5cfb27a866fc5066df954b5a1ffec7c844d0571be7607e5b75b086495fbec59",
+        "apply_eligible": false,
+        "bip30_closes": [
+          1,
+          1
+        ],
+        "bip30_seq_plus1": [
+          142784,
+          142842
+        ],
+        "block_hash": "00000000000000000000014b8c7f91bbf877876ca6b709a3e167a1fa3d42362f",
+        "close_count": 3503588291,
+        "close_stream_sha256": "7e37c985b180cd861edd5383a05dfef7d730710d577fc31236052af2f74fac77",
+        "closed_value_sats": "925294970074821900",
+        "core_sha256": "e844b24ea3db81112444b3dd7d7bc26c525afac3d6e6c0ddb69cc0edfd86b0f1",
+        "count_partition": true,
+        "driver_sha256": "13088c39047206e0e71dcd510100ce9853f81ef941246aa425d39bc520087c3a",
+        "full_certification": false,
+        "height": 968206,
+        "helper_binary_sha256": "b6a60210ceedca93fa9a2a437ab6fe9887ce7bfce57a0cf79352808927e09c00",
+        "helper_path": "/opt/mybot_tmp/bitcoinvero-fast-bvstate-r6p3/run.l5hgV8Yv/tmp/selected-82901d7f719640979369be9c59f2d413/runtime/audit-4f6c2b8726c499e1ebdfd15fcdaf8ed159314c3ca5f6de3b2618558b217bed51-b3",
+        "helper_source_sha256": "4f6c2b8726c499e1ebdfd15fcdaf8ed159314c3ca5f6de3b2618558b217bed51",
+        "independent_stage_comparison": "NOT_EVALUATED",
+        "ineligible_outputs": 267438058,
+        "ineligible_value_sats": "10116274402",
+        "live_count": 165204813,
+        "live_fingerprint_sha256": "4fb4b8e2506d936b88dca40642729346b7a40f96c0b553bf64ee572bdcbe7f36",
+        "live_value_sats": 2008791675380694,
+        "memory_admission": {
+          "closed_bitmap_bytes": 492028896,
+          "guaranteed_peak_bound": false,
+          "measured": {
+            "ancestors": [
+              {
+                "headroom": null,
+                "limit": "max",
+                "path": "/sys/fs/cgroup/user.slice/user-0.slice/session-1.scope"
+              },
+              {
+                "headroom": null,
+                "limit": "max",
+                "path": "/sys/fs/cgroup/user.slice/user-0.slice"
+              },
+              {
+                "headroom": null,
+                "limit": "max",
+                "path": "/sys/fs/cgroup/user.slice"
+              },
+              {
+                "path": "/sys/fs/cgroup",
+                "status": "HOST_ROOT_NO_MEMORY_INTERFACE"
+              }
+            ],
+            "available_bytes": 117396414464,
+            "host_mem_available_bytes": 117396414464,
+            "scope": "MEASURED_CURRENT_HEADROOM_NOT_PEAK_PREDICTION",
+            "status": "OK"
+          },
+          "measured_peak_rss": "NOT_MEASURED",
+          "model": "closed_bitmap_plus_128MiB_v1",
+          "modeled_required_bytes": 626246624,
+          "stage": "scanner",
+          "status": "OK"
+        },
+        "out_count": 3936231162,
+        "output_value_sats": "927303771866476996",
+        "producer_schema": "bitcoinvero-audit-scanner-v51.6-selected-v1",
+        "proof_basis": "STATE_RECORDS",
+        "proof_strength": "STATE_DERIVED_CONSISTENCY",
+        "schema": "bitcoinvero-audit-selected-state-v2",
+        "scope": "SELECTED_STATE_RECORD_OBSERVATION",
+        "script_bytes": 97508179051,
+        "source_binding": {
+          "directories": {
+            "parent": {
+              "dev": 66309,
+              "ino": 2148724070
+            },
+            "state": {
+              "dev": 66309,
+              "ino": 17706634
+            }
+          },
+          "files": {
+            ".v50-driver.lock": {
+              "ctime_ns": 1792773710007870755,
+              "dev": 66309,
+              "ino": 2149218662,
+              "mtime_ns": 1792773710007870755,
+              "nlink": 1,
+              "size": 115
+            },
+            ".v50-r12-supervisor.lock": {
+              "ctime_ns": 1792820684803532748,
+              "dev": 66309,
+              "ino": 2148727230,
+              "mtime_ns": 1792820684803532748,
+              "nlink": 1,
+              "size": 11
+            },
+            "LOCK": {
+              "ctime_ns": 1791568332370598307,
+              "dev": 66309,
+              "ino": 17706658,
+              "mtime_ns": 1791568332370598307,
+              "nlink": 1,
+              "size": 0
+            },
+            "checkpoint.bin": {
+              "ctime_ns": 1792816838041606079,
+              "dev": 66309,
+              "ino": 1681674,
+              "mtime_ns": 1792816838039606069,
+              "nlink": 1,
+              "size": 180
+            },
+            "closes.bin": {
+              "ctime_ns": 1792816837160601485,
+              "dev": 66309,
+              "ino": 17706663,
+              "mtime_ns": 1792816837160601485,
+              "nlink": 1,
+              "size": 84109454208
+            },
+            "outputs.bin": {
+              "ctime_ns": 1792816837160601485,
+              "dev": 66309,
+              "ino": 17706662,
+              "mtime_ns": 1792816837160601485,
+              "nlink": 1,
+              "size": 125959397184
+            },
+            "scripts.bin": {
+              "ctime_ns": 1792816837161601490,
+              "dev": 66309,
+              "ino": 17706664,
+              "mtime_ns": 1792816837161601490,
+              "nlink": 1,
+              "size": 97508179051
+            },
+            "state.meta": {
+              "ctime_ns": 1791936847529753155,
+              "dev": 66309,
+              "ino": 152153310,
+              "mtime_ns": 1791936847526753143,
+              "nlink": 1,
+              "size": 192
+            },
+            "tx_records.bin": {
+              "ctime_ns": 1792816837161601490,
+              "dev": 66309,
+              "ino": 17706661,
+              "mtime_ns": 1792816837161601490,
+              "nlink": 1,
+              "size": 80911607168
+            }
+          },
+          "schema": "bitcoinvero-audit-source-binding-v1"
+        },
+        "source_sha256": "2e7359db5990c28ef9f05b08e7c089ab161a2ba9ea8eaa7ada1bfa2792f3747e",
+        "spend_closes": 3503588289,
+        "state_derived_fee_proof": {
+          "apply_eligible": false,
+          "coverage_status": "COMPLETE_FOR_SELECTED_STATE_CHECKS",
+          "fees_sats": "30070577923310",
+          "full_certification": false,
+          "independent_stage_comparison": "NOT_EVALUATED",
+          "normal_inputs": 3503588289,
+          "proof_basis": "STATE_RECORDS",
+          "proof_strength": "STATE_DERIVED_CONSISTENCY",
+          "scope": "STATE_DERIVED_FEE_CONSISTENCY",
+          "status": "OK",
+          "transactions_checked": 1443881921,
+          "transition_certification": false
+        },
+        "state_derived_reward_proof": {
+          "apply_eligible": false,
+          "blocks_checked": 968207,
+          "claimed_coinbase_sats": "2038882369578406",
+          "coverage_status": "COMPLETE_FOR_SELECTED_STATE_CHECKS",
+          "fees_sats": "30070577923310",
+          "full_certification": false,
+          "independent_stage_comparison": "NOT_EVALUATED",
+          "proof_basis": "STATE_RECORDS",
+          "proof_strength": "STATE_DERIVED_CONSISTENCY",
+          "scope": "STATE_DERIVED_REWARD_CONSISTENCY",
+          "status": "OK",
+          "subsidy_sats": "2008814687500000",
+          "transition_certification": false
+        },
+        "status": "OK",
+        "transition_certification": false,
+        "tx_count": 1444850128,
+        "tx_stream_sha256": "78f2326e2e33df892338d69ece68a1c7b0b83cb44ac768787f834a0dffc63794",
+        "value_checks": "all",
+        "value_partition": true
+      },
+      "scope": "STATE_RECORDS_AND_PARTITIONS",
+      "status": "OK",
+      "transition_certification": false
+    }
+  },
+  "diagnostic_log_complete": true,
+  "diagnostic_log_scope": "THROUGH_REPORT_SNAPSHOT_ONLY",
+  "finished_utc": "2026-11-19T18:52:43.164458+00:00",
+  "full_certification": false,
+  "input_stability": {
+    "byte_immutability": "NOT_ESTABLISHED",
+    "files": 13,
+    "scope": "FIXED_INPUT_IDENTITIES_ONLY",
+    "snapshot_consistency": "NOT_ESTABLISHED",
+    "status": "OK",
+    "token_digest": "04e68b8324b14100211eb44d59d047ac7caccf19e69299ffd7397e2be7095102"
+  },
+  "local_acceptance": "OPERATOR_ACCEPTED",
+  "logging_degraded": false,
+  "report_path": "/root/mbot/audit-reports/bvstate-r6p3/run.qXpiApdJ/reports/audit_v51_6_0_selected_82901d7f719640979369be9c59f2d413.json",
+  "schema": "bitcoinvero-audit-selected-prepared-v2",
+  "scope": "PREPARED_SELECTED_DIAGNOSTICS",
+  "selected_checks_status": "NOT_FINALIZED",
+  "source_assurance": {
+    "apply_eligible": false,
+    "byte_immutability": "NOT_ESTABLISHED",
+    "core_correctness": "NOT_EVALUATED",
+    "files": {},
+    "full_certification": false,
+    "kernel_measurements": 0,
+    "mode": "OBSERVATION_ONLY",
+    "payload_bytes_read": 0,
+    "schema": "bitcoinvero-audit-source-assurance-v1",
+    "snapshot_consistency": "NOT_ESTABLISHED",
+    "status": "NOT_ESTABLISHED"
+  },
+  "started_utc": "2026-11-15T21:24:08.267526+00:00",
+  "status": "COMPUTED_PENDING_FINALIZATION",
+  "version": "v52-independent-auditor-r12.9",
+  "warnings": [
+    {
+      "code": "SOURCE_STABILITY_UNPROVEN",
+      "message": "Source byte immutability has not been established for this invocation. Existing inode, size and timestamp checks and cooperative advisory leases remain in force, but they can miss some rapid same-size writes by a writer that does not honor those leases, including writes whose observed stat tokens remain unchanged. Concurrent changes can make observations combine bytes from different source states. This warning does not report detected UTXO corruption. Use a consistent source that stays unchanged throughout the audit; do not modify the live UTXO to silence this notice.",
+      "scope": "SOURCE_STABILITY_LIMITATION_ONLY",
+      "severity": "WARN",
+      "stage": "START"
+    },
+    {
+      "code": "SOURCE_STABILITY_CONDITIONAL",
+      "message": "Observations from checks that actually completed are conditional on the source bytes having remained unchanged during their execution. That condition was not independently established; matching stat tokens alone do not prove it. The selected scope, omitted checks, failures and return code retain their original meaning. An interrupted or failed check is not made successful by this warning. These observations are not a full certificate of UTXO correctness or history and do not authorize APPLY or RECOVER. Review the report scope and all failures before relying on it.",
+      "scope": "SOURCE_STABILITY_LIMITATION_ONLY",
+      "severity": "WARN",
+      "stage": "SUMMARY"
+    }
+  ]
+}
