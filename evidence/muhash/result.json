@@ -1,0 +1,132 @@
+{
+  "admission": "DIRECT_V3_STATE_EXISTING_COOPERATIVE_LOCKS",
+  "certification": "NO_GLOBAL_TXID_DUPLICATE_AUDIT_OR_RELEASE_CERTIFICATION",
+  "checkpoint": {
+    "block_hash": "00000000000000000000014b8c7f91bbf877876ca6b709a3e167a1fa3d42362f",
+    "checkpoint_sha256": "af865e7e8654126c68fe14c038d43b393eddd1821b6e8f55db00483fbef8f7d1",
+    "close_count": 3503588291,
+    "height": 968206,
+    "live_count": 165204813,
+    "live_value_sats": 2008791675380694,
+    "out_count": 3936231162,
+    "script_bytes": 97508179051,
+    "state_meta_sha256": "b9d9af0df9d228cb49deb7995c888ac5d6713ca8cb850b5211e1ba459544ae52",
+    "tx_count": 1444850128
+  },
+  "comparison": {
+    "compared_fields": [
+      "height",
+      "block_hash",
+      "muhash",
+      "live_count",
+      "live_value_sats"
+    ],
+    "differences": [],
+    "status": "MATCH"
+  },
+  "environment": {
+    "compiler": {
+      "command": "/usr/bin/g++",
+      "compiled_version": "11.5.0 20240719 (Red Hat 11.5.0-15)",
+      "driver_version": "g++ (GCC) 11.5.0 20240719 (Red Hat 11.5.0-15)",
+      "driver_version_output_sha256": "e72c2409d6de94b2d8fd9917a9d36ef64b23669e57f23837fcbd15f1bcd3dc36",
+      "flags": [
+        "-O3",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra"
+      ],
+      "link_flags": [
+        "-lcrypto"
+      ],
+      "resolved_executable": "/usr/bin/g++"
+    },
+    "linux": {
+      "machine": "x86_64",
+      "release": "5.14.0-734.el9.x86_64",
+      "sysname": "Linux",
+      "version": "#1 SMP PREEMPT_DYNAMIC Thu Aug 6 09:10:23 UTC 2026"
+    },
+    "native": {
+      "compiler_version": "11.5.0 20240719 (Red Hat 11.5.0-15)",
+      "cplusplus": 201703,
+      "libcrypto": {
+        "headers_version": "OpenSSL 3.5.7 9 Jun 2026",
+        "runtime_version": "OpenSSL 3.5.7 9 Jun 2026",
+        "runtime_version_number": 810549360
+      },
+      "schema": "bitcoinvero-native-environment-v1"
+    },
+    "python": {
+      "executable": "/root/mybot/.venv/bin/python",
+      "implementation": "cpython",
+      "resolved_executable": "/root/mybot/.venv/bin/python",
+      "version": "3.9.25 (main, Jul 13 2026, 00:00:00) \n[GCC 11.5.0 20240719 (Red Hat 11.5.0-14)]"
+    },
+    "schema": "bitcoinvero-muhash-environment-v1",
+    "scope": "OBSERVED_VERSIONS_AND_TOOL_HASHES_NOT_A_FULL_DYNAMIC_DEPENDENCY_LOCK",
+    "tool": {
+      "helper_binary_sha256": "eb24332945dfe5423326807efa108283ff2d6d1b29ee8c12484afb51a39bd39f",
+      "native_source_sha256": "2d6d0adbd12dac34ba8ec40ad611198817e7f3d7468ebd62c6f4404e7e2566dd",
+      "script": "/root/BitcoinVero_MuHash_Standalone_v1_0_4/muhash_standalone.py",
+      "script_sha256": "439e29b7c8af5f0918db11750e855c39c3cbe807b626344787417c66f1a19dde",
+      "version": "1.0.4"
+    }
+  },
+  "fingerprint": "NOT_PERFORMED",
+  "full_verify": "NOT_PERFORMED",
+  "helper_binary_sha256": "eb24332945dfe5423326807efa108283ff2d6d1b29ee8c12484afb51a39bd39f",
+  "limits": {
+    "bitmap_bytes": 492028896,
+    "cgroup": "/sys/fs/cgroup/system.slice/bitcoinvero-muhash-968206-20261024T054825Z-16788.service",
+    "effective_headroom_bytes": 103028043776,
+    "host_available_bytes": 114807578624,
+    "memory_current_bytes": 51171328,
+    "memory_high": "48318382080",
+    "memory_max_bytes": 103079215104
+  },
+  "native": {
+    "bitmap_bytes": 492028896,
+    "block_hash": "00000000000000000000014b8c7f91bbf877876ca6b709a3e167a1fa3d42362f",
+    "checkpoint_sha256": "af865e7e8654126c68fe14c038d43b393eddd1821b6e8f55db00483fbef8f7d1",
+    "environment": {
+      "compiler_version": "11.5.0 20240719 (Red Hat 11.5.0-15)",
+      "cplusplus": 201703,
+      "libcrypto": {
+        "headers_version": "OpenSSL 3.5.7 9 Jun 2026",
+        "runtime_version": "OpenSSL 3.5.7 9 Jun 2026",
+        "runtime_version_number": 810549360
+      },
+      "schema": "bitcoinvero-native-environment-v1"
+    },
+    "height": 968206,
+    "live_count": 165204813,
+    "live_value_sats": 2008791675380694,
+    "max_rss_kib": 81416724,
+    "muhash": "306b7e860a4f2718a10ba74a3368df55523b6dc0835d5dc452c767214018f33f",
+    "read_bytes": 227130134523904,
+    "schema": "mybot-native-muhash-v1",
+    "serialized_bytes": 12776160940
+  },
+  "orchestrator_metadata": "NOT_EXAMINED",
+  "recovery_status": "NOT_ASSESSED",
+  "reference": {
+    "bitcoin_cli_sha256": "4e3a0fde23ec768a61cdd193602be937b29b6e8f21bcb614af87a2786bf86034",
+    "block_hash": "00000000000000000000014b8c7f91bbf877876ca6b709a3e167a1fa3d42362f",
+    "chain": "main",
+    "core_version": 310100,
+    "height": 968206,
+    "index_best_height": 972886,
+    "live_count": 165204813,
+    "live_value_sats": 2008791675380694,
+    "muhash": "306b7e860a4f2718a10ba74a3368df55523b6dc0835d5dc452c767214018f33f",
+    "source": "BITCOIN_CORE_EXACT_HASH_COINSTATSINDEX"
+  },
+  "schema": "bitcoinvero-standalone-muhash-v1",
+  "seconds": 320550.676859475,
+  "source_sha256": "2d6d0adbd12dac34ba8ec40ad611198817e7f3d7468ebd62c6f4404e7e2566dd",
+  "state_mutated": false,
+  "tool_version": "1.0.4",
+  "utxo_path": "/opt/mybot_data/etl/utxo_v51_new/state",
+  "validation_scope": "LIVE_UTXO_COMMITMENT_AND_READER_STRUCTURAL_CHECKS"
+}

@@ -1,0 +1,8 @@
+{
+  "ack_sha256": "1f50b17196e9c2e14718da99c171e82c8eaad9f7ee8a57df97d4de14c5736c9c",
+  "actual_return_code": 0,
+  "auditor_sha256": "1d3dac124b91f7cfaaa05dcc206cb3d4539c3f112ca6cd8421fdebcc12b336f4",
+  "finished_utc": "2026-11-19T18:52:44.274006+00:00",
+  "schema": "bitcoinvero-owned-auditor-exit-v1",
+  "started_utc": "2026-11-15T21:24:08.013172+00:00"
+}

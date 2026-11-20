@@ -1,0 +1,12 @@
+{
+  "bitcoin_cli_sha256": "4e3a0fde23ec768a61cdd193602be937b29b6e8f21bcb614af87a2786bf86034",
+  "block_hash": "00000000000000000000014b8c7f91bbf877876ca6b709a3e167a1fa3d42362f",
+  "chain": "main",
+  "core_version": 310100,
+  "height": 968206,
+  "index_best_height": 972886,
+  "live_count": 165204813,
+  "live_value_sats": 2008791675380694,
+  "muhash": "306b7e860a4f2718a10ba74a3368df55523b6dc0835d5dc452c767214018f33f",
+  "source": "BITCOIN_CORE_EXACT_HASH_COINSTATSINDEX"
+}

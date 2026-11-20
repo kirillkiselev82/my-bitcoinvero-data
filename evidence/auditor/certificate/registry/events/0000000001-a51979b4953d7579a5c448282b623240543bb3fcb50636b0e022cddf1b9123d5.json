@@ -1,0 +1,217 @@
+{
+  "certificate": {
+    "actual_return_code": 0,
+    "ascii_text": "================================================================\nBITCOINVERO - UTXO STATE CONSISTENCY CERTIFICATE\nSTATE_CONSISTENCY\nCompletion: COMPLETED | Certification: CERTIFIED\nFull history was not independently verified.\n----------------------------------------------------------------\nAUDITED STATE\nNetwork: Bitcoin mainnet\nState after block: 968206 inclusive\nBlock time UTC: UNKNOWN\nLive outputs: 165204813 | Total value: 20087916.75380694 BTC\nBlock hash: 00000000000000000000014b8c7f91bbf877876ca6b709a3e167a1fa3d42362f\nSource: /opt/mybot_data/etl/utxo_v51_new/state\nState identity (SHA-256): a11f4cc13a2e4acff27c13e2f866a1e7cafe62b5ad72e853fbfb13fb7d46c656\n----------------------------------------------------------------\nCOVERAGE AND RESULTS\n[OK] P07 - State consistency\n[OK] P07.26-29 - Fees, rewards and calculation coverage\n[NOT_EVALUATED] P15 - Independent Stage -> UTXO comparison\n[NOT_EVALUATED] P15.14-16 - Independent fee and reward comparison\n[NOT_EVALUATED] P12 - Independent Bitcoin Core -> Stage comparison\nRequired checks: 3/3\nExclusion: Independent history not evaluated in STATE_CONSISTENCY mode.\nSource policy: EXISTING_GUARDS_WITH_OPERATIONAL_QUIESCENCE_ASSUMPTIONS\nSource condition: All ordinary state writers honor the existing leases throughout audit reads.\nSource condition: No direct native, old-version, maintenance or other writer bypasses those leases during audit reads.\nSource condition: Stage, provenance, evidence and runtime inputs remain stable during their required read intervals; existing identity and content checks still apply.\nOperational assumptions are not independently verified.\nComplete check inventory and calculator/core/driver pins: see bound report.\n----------------------------------------------------------------\nAUDIT RECORD\nCertificate: BV-STATE-968206-82901d7f719640979369be9c59f2d413\nAudit ID: 82901d7f719640979369be9c59f2d413\nStarted UTC: 2026-11-15T21:24:08.265821+00:00\nFinished UTC: 2026-11-19T18:52:43.185543+00:00\nDuration: 336514.91971645004 seconds\nAuditor: v52-independent-auditor-r12.9\nAuditor SHA-256: 1d3dac124b91f7cfaaa05dcc206cb3d4539c3f112ca6cd8421fdebcc12b336f4\nCalculator: See bound report (exact pinned calculator)\nPrevious certificate at a lower height: none registered\nPrevious audit of this state: none registered\nReport: /root/mbot/audit-reports/bvstate-r6p3/run.qXpiApdJ/reports/audit_result_82901d7f719640979369be9c59f2d413.json\nReport SHA-256: 57861716564bf67ba500a26ab622174669ff073f48162f294ad0646fd3c10b57\n----------------------------------------------------------------\nApplies only to the identified audited UTXO state.\nSubsequent changes are not covered.\nA later height does not certify every earlier historical UTXO composition.\nSHA-256 provides integrity checking, not a digital signature.\n================================================================\n",
+    "certificate_id": "BV-STATE-968206-82901d7f719640979369be9c59f2d413",
+    "completion": {
+      "ack_sha256": "1f50b17196e9c2e14718da99c171e82c8eaad9f7ee8a57df97d4de14c5736c9c",
+      "actual_return_code": 0,
+      "auditor_sha256": "1d3dac124b91f7cfaaa05dcc206cb3d4539c3f112ca6cd8421fdebcc12b336f4",
+      "finished_utc": "2026-11-19T18:52:44.274006+00:00",
+      "schema": "bitcoinvero-owned-auditor-exit-v1",
+      "started_utc": "2026-11-15T21:24:08.013172+00:00"
+    },
+    "engine_terminal_bytes": "{\"acceptance\": \"REQUIRES_MATCHING_DURABLE_STDOUT_ACK\", \"apply_eligible\": false, \"audit_id\": \"82901d7f719640979369be9c59f2d413\", \"freeze_released\": true, \"full_certification\": false, \"input_state_at_publication\": \"NOT_VERIFIED\", \"observation_status\": \"CHECKS_COMPLETED_AND_LEASES_RELEASED\", \"prepared_completion\": \"audit_v51_6_0_selected_82901d7f719640979369be9c59f2d413.complete.json\", \"prepared_completion_sha256\": \"9900c80360deb9cf51e552d1c3eba29aeac2264e169318577f9b2f32b4064897\", \"prepared_report\": \"audit_v51_6_0_selected_82901d7f719640979369be9c59f2d413.json\", \"prepared_report_sha256\": \"1107a0d20b3896c22eb8dd98a893a528c8546cd4844410cb2f75bb642ba20eb0\", \"schema\": \"bitcoinvero-audit-selected-terminal-v1\", \"selected_checks_status\": \"NOT_ASSERTED_BY_FILE\", \"source_assurance_sha256\": \"a20fadc331989d7bf2749604b2a603efd5e799dbd988a0e35c3c9d7fe57c39d4\"}\n",
+    "previous_lower_height": null,
+    "previous_same_state": null,
+    "publication": {
+      "report": "/root/mbot/audit-reports/bvstate-r6p3/run.qXpiApdJ/reports/audit_result_82901d7f719640979369be9c59f2d413.json",
+      "report_sha256": "57861716564bf67ba500a26ab622174669ff073f48162f294ad0646fd3c10b57",
+      "terminal": "/root/mbot/audit-reports/bvstate-r6p3/run.qXpiApdJ/reports/audit_result_82901d7f719640979369be9c59f2d413.terminal.json",
+      "terminal_sha256": "46b1a870261146a57271f53d2d386a17ca7b00e89410b9c7036a7d8057ae0812"
+    },
+    "report_bytes": "{\n  \"acceptance\": \"REQUIRES_MATCHING_DURABLE_STDOUT_ACK_AND_RETURN_CODE\",\n  \"apply_eligible\": false,\n  \"audit_id\": \"82901d7f719640979369be9c59f2d413\",\n  \"auditor_sha256\": \"1d3dac124b91f7cfaaa05dcc206cb3d4539c3f112ca6cd8421fdebcc12b336f4\",\n  \"certificate_details\": {\n    \"calculator\": \"See bound report (exact pinned calculator)\",\n    \"completed_required_checks\": 3,\n    \"coverage_rows\": {\n      \"P07\": \"OK\",\n      \"P07.26-29\": \"OK\",\n      \"P12\": \"NOT_EVALUATED\",\n      \"P15\": \"NOT_EVALUATED\",\n      \"P15.14-16\": \"NOT_EVALUATED\"\n    },\n    \"duration_seconds\": 336514.91971645004,\n    \"exclusions\": [\n      \"Independent history not evaluated in STATE_CONSISTENCY mode.\"\n    ],\n    \"finished_utc\": \"2026-11-19T18:52:43.185543+00:00\",\n    \"inventory\": \"See bound engine report; summary is not the complete check inventory.\",\n    \"network\": \"Bitcoin mainnet\",\n    \"network_basis\": \"PINNED_CALCULATOR_CONTRACT; NOT_A_NEW_NETWORK_QUERY\",\n    \"required_checks\": 3,\n    \"source_path\": \"/opt/mybot_data/etl/utxo_v51_new/state\",\n    \"started_utc\": \"2026-11-15T21:24:08.265821+00:00\"\n  },\n  \"certification\": {\n    \"does_not_prove\": [\n      \"BITCOIN_HISTORY_OR_CANONICAL_COIN_SET\"\n    ],\n    \"level\": \"STATE_CONSISTENCY\",\n    \"reasons\": [],\n    \"scope\": \"INTERNAL_STATE_CONSISTENCY_ONLY\",\n    \"source_conditions\": {\n      \"assumptions_independently_verified\": false,\n      \"certification_conditional_on_assumptions\": true,\n      \"conditions\": [\n        {\n          \"id\": \"COOPERATIVE_WRITER_PROTOCOL\",\n          \"statement\": \"All ordinary state writers honor the existing leases throughout audit reads.\",\n          \"status\": \"OPERATIONAL_ASSUMPTION\"\n        },\n        {\n          \"id\": \"NO_OUT_OF_PROTOCOL_WRITES\",\n          \"statement\": \"No direct native, old-version, maintenance or other writer bypasses those leases during audit reads.\",\n          \"status\": \"OPERATIONAL_ASSUMPTION\"\n        },\n        {\n          \"id\": \"OTHER_INPUTS_STABLE\",\n          \"statement\": \"Stage, provenance, evidence and runtime inputs remain stable during their required read intervals; existing identity and content checks still apply.\",\n          \"status\": \"OPERATIONAL_ASSUMPTION\"\n        }\n      ],\n      \"fs_verity_required\": false,\n      \"guard_requirement\": \"EXISTING_ENGINE_GUARDS_AND_BOUND_DURABLE_TERMINAL_MUST_SUCCEED\",\n      \"not_established_by_this_policy\": [\n        \"ATOMIC_FILESYSTEM_SNAPSHOT\",\n        \"ARBITRARY_WRITER_EXCLUSION\",\n        \"INDEPENDENT_COMPLETE_WRITER_CENSUS\",\n        \"UNCHANGED_PATH_CONTENTS_AFTER_SOURCE_RELEASE\"\n      ],\n      \"policy\": \"EXISTING_GUARDS_WITH_OPERATIONAL_QUIESCENCE_ASSUMPTIONS\",\n      \"schema\": \"bitcoinvero-source-certification-conditions-v1\",\n      \"scope\": \"EXACT_REPORTED_HEIGHT_BLOCK_HASH_AND_INPUT_BINDINGS\",\n      \"strict_option\": \"--require-immutable-source\",\n      \"strict_option_semantics\": \"Additional existing read-only kernel checks; never enabled automatically.\"\n    },\n    \"status\": \"CERTIFIED\",\n    \"subject\": {\n      \"block_hash\": \"00000000000000000000014b8c7f91bbf877876ca6b709a3e167a1fa3d42362f\",\n      \"block_time_status\": \"NOT_AVAILABLE_IN_THIS_MODE\",\n      \"block_time_utc\": null,\n      \"close_count\": 3503588291,\n      \"core_sha256\": \"e844b24ea3db81112444b3dd7d7bc26c525afac3d6e6c0ddb69cc0edfd86b0f1\",\n      \"driver_sha256\": \"13088c39047206e0e71dcd510100ce9853f81ef941246aa425d39bc520087c3a\",\n      \"height\": 968206,\n      \"live_count\": 165204813,\n      \"live_value_sats\": 2008791675380694,\n      \"out_count\": 3936231162,\n      \"script_bytes\": 97508179051,\n      \"source_sha256\": \"2e7359db5990c28ef9f05b08e7c089ab161a2ba9ea8eaa7ada1bfa2792f3747e\",\n      \"state_meta_sha256\": \"b9d9af0df9d228cb49deb7995c888ac5d6713ca8cb850b5211e1ba459544ae52\",\n      \"stream_sha256\": {\n        \"all_outputs_sha256\": \"e5cfb27a866fc5066df954b5a1ffec7c844d0571be7607e5b75b086495fbec59\",\n        \"close_stream_sha256\": \"7e37c985b180cd861edd5383a05dfef7d730710d577fc31236052af2f74fac77\",\n        \"live_fingerprint_sha256\": \"4fb4b8e2506d936b88dca40642729346b7a40f96c0b553bf64ee572bdcbe7f36\",\n        \"tx_stream_sha256\": \"78f2326e2e33df892338d69ece68a1c7b0b83cb44ac768787f834a0dffc63794\"\n      },\n      \"tx_count\": 1444850128\n    }\n  },\n  \"certification_level\": \"STATE_CONSISTENCY\",\n  \"certification_status\": \"CERTIFIED\",\n  \"certified_at_utc\": \"2026-11-19T18:52:43.185504+00:00\",\n  \"completed_at_utc\": \"2026-11-19T18:52:43.185499+00:00\",\n  \"engine_evidence\": {\n    \"path\": \"/root/mbot/audit-reports/bvstate-r6p3/run.qXpiApdJ/reports/audit_v51_6_0_selected_82901d7f719640979369be9c59f2d413.terminal-receipt.json\",\n    \"schema\": \"bitcoinvero-audit-selected-terminal-v1\",\n    \"sha256\": \"dce75eaa8bc886d73e48175e6934cd046a60e5ae67faae306deaef8ebadf3dbd\"\n  },\n  \"engine_return_code\": 2,\n  \"execution_status\": \"COMPLETED\",\n  \"full_certification\": false,\n  \"general_resume\": null,\n  \"input_state_at_publication\": \"NOT_VERIFIED_AFTER_SOURCE_RELEASE\",\n  \"mode\": \"state\",\n  \"return_code\": 0,\n  \"schema\": \"bitcoinvero-auditor-result-v2\",\n  \"source_assurance\": {\n    \"apply_eligible\": false,\n    \"byte_immutability\": \"NOT_ESTABLISHED\",\n    \"core_correctness\": \"NOT_EVALUATED\",\n    \"files\": {},\n    \"full_certification\": false,\n    \"kernel_measurements\": 0,\n    \"mode\": \"OBSERVATION_ONLY\",\n    \"payload_bytes_read\": 0,\n    \"schema\": \"bitcoinvero-audit-source-assurance-v1\",\n    \"snapshot_consistency\": \"NOT_ESTABLISHED\",\n    \"status\": \"NOT_ESTABLISHED\"\n  },\n  \"source_conditions\": {\n    \"assumptions_independently_verified\": false,\n    \"certification_conditional_on_assumptions\": true,\n    \"conditions\": [\n      {\n        \"id\": \"COOPERATIVE_WRITER_PROTOCOL\",\n        \"statement\": \"All ordinary state writers honor the existing leases throughout audit reads.\",\n        \"status\": \"OPERATIONAL_ASSUMPTION\"\n      },\n      {\n        \"id\": \"NO_OUT_OF_PROTOCOL_WRITES\",\n        \"statement\": \"No direct native, old-version, maintenance or other writer bypasses those leases during audit reads.\",\n        \"status\": \"OPERATIONAL_ASSUMPTION\"\n      },\n      {\n        \"id\": \"OTHER_INPUTS_STABLE\",\n        \"statement\": \"Stage, provenance, evidence and runtime inputs remain stable during their required read intervals; existing identity and content checks still apply.\",\n        \"status\": \"OPERATIONAL_ASSUMPTION\"\n      }\n    ],\n    \"fs_verity_required\": false,\n    \"guard_requirement\": \"EXISTING_ENGINE_GUARDS_AND_BOUND_DURABLE_TERMINAL_MUST_SUCCEED\",\n    \"not_established_by_this_policy\": [\n      \"ATOMIC_FILESYSTEM_SNAPSHOT\",\n      \"ARBITRARY_WRITER_EXCLUSION\",\n      \"INDEPENDENT_COMPLETE_WRITER_CENSUS\",\n      \"UNCHANGED_PATH_CONTENTS_AFTER_SOURCE_RELEASE\"\n    ],\n    \"policy\": \"EXISTING_GUARDS_WITH_OPERATIONAL_QUIESCENCE_ASSUMPTIONS\",\n    \"schema\": \"bitcoinvero-source-certification-conditions-v1\",\n    \"scope\": \"EXACT_REPORTED_HEIGHT_BLOCK_HASH_AND_INPUT_BINDINGS\",\n    \"strict_option\": \"--require-immutable-source\",\n    \"strict_option_semantics\": \"Additional existing read-only kernel checks; never enabled automatically.\"\n  },\n  \"source_readset\": null,\n  \"status\": \"COMPLETED\",\n  \"subject\": {\n    \"block_hash\": \"00000000000000000000014b8c7f91bbf877876ca6b709a3e167a1fa3d42362f\",\n    \"block_time_status\": \"NOT_AVAILABLE_IN_THIS_MODE\",\n    \"block_time_utc\": null,\n    \"close_count\": 3503588291,\n    \"core_sha256\": \"e844b24ea3db81112444b3dd7d7bc26c525afac3d6e6c0ddb69cc0edfd86b0f1\",\n    \"driver_sha256\": \"13088c39047206e0e71dcd510100ce9853f81ef941246aa425d39bc520087c3a\",\n    \"height\": 968206,\n    \"live_count\": 165204813,\n    \"live_value_sats\": 2008791675380694,\n    \"out_count\": 3936231162,\n    \"script_bytes\": 97508179051,\n    \"source_sha256\": \"2e7359db5990c28ef9f05b08e7c089ab161a2ba9ea8eaa7ada1bfa2792f3747e\",\n    \"state_meta_sha256\": \"b9d9af0df9d228cb49deb7995c888ac5d6713ca8cb850b5211e1ba459544ae52\",\n    \"stream_sha256\": {\n      \"all_outputs_sha256\": \"e5cfb27a866fc5066df954b5a1ffec7c844d0571be7607e5b75b086495fbec59\",\n      \"close_stream_sha256\": \"7e37c985b180cd861edd5383a05dfef7d730710d577fc31236052af2f74fac77\",\n      \"live_fingerprint_sha256\": \"4fb4b8e2506d936b88dca40642729346b7a40f96c0b553bf64ee572bdcbe7f36\",\n      \"tx_stream_sha256\": \"78f2326e2e33df892338d69ece68a1c7b0b83cb44ac768787f834a0dffc63794\"\n    },\n    \"tx_count\": 1444850128\n  },\n  \"version\": \"v52-independent-auditor-r12.9\"\n}\n",
+    "result": {
+      "acceptance": "REQUIRES_MATCHING_DURABLE_STDOUT_ACK_AND_RETURN_CODE",
+      "apply_eligible": false,
+      "audit_id": "82901d7f719640979369be9c59f2d413",
+      "auditor_sha256": "1d3dac124b91f7cfaaa05dcc206cb3d4539c3f112ca6cd8421fdebcc12b336f4",
+      "certificate_details": {
+        "calculator": "See bound report (exact pinned calculator)",
+        "completed_required_checks": 3,
+        "coverage_rows": {
+          "P07": "OK",
+          "P07.26-29": "OK",
+          "P12": "NOT_EVALUATED",
+          "P15": "NOT_EVALUATED",
+          "P15.14-16": "NOT_EVALUATED"
+        },
+        "duration_seconds": 336514.91971645004,
+        "exclusions": [
+          "Independent history not evaluated in STATE_CONSISTENCY mode."
+        ],
+        "finished_utc": "2026-11-19T18:52:43.185543+00:00",
+        "inventory": "See bound engine report; summary is not the complete check inventory.",
+        "network": "Bitcoin mainnet",
+        "network_basis": "PINNED_CALCULATOR_CONTRACT; NOT_A_NEW_NETWORK_QUERY",
+        "required_checks": 3,
+        "source_path": "/opt/mybot_data/etl/utxo_v51_new/state",
+        "started_utc": "2026-11-15T21:24:08.265821+00:00"
+      },
+      "certification": {
+        "does_not_prove": [
+          "BITCOIN_HISTORY_OR_CANONICAL_COIN_SET"
+        ],
+        "level": "STATE_CONSISTENCY",
+        "reasons": [],
+        "scope": "INTERNAL_STATE_CONSISTENCY_ONLY",
+        "source_conditions": {
+          "assumptions_independently_verified": false,
+          "certification_conditional_on_assumptions": true,
+          "conditions": [
+            {
+              "id": "COOPERATIVE_WRITER_PROTOCOL",
+              "statement": "All ordinary state writers honor the existing leases throughout audit reads.",
+              "status": "OPERATIONAL_ASSUMPTION"
+            },
+            {
+              "id": "NO_OUT_OF_PROTOCOL_WRITES",
+              "statement": "No direct native, old-version, maintenance or other writer bypasses those leases during audit reads.",
+              "status": "OPERATIONAL_ASSUMPTION"
+            },
+            {
+              "id": "OTHER_INPUTS_STABLE",
+              "statement": "Stage, provenance, evidence and runtime inputs remain stable during their required read intervals; existing identity and content checks still apply.",
+              "status": "OPERATIONAL_ASSUMPTION"
+            }
+          ],
+          "fs_verity_required": false,
+          "guard_requirement": "EXISTING_ENGINE_GUARDS_AND_BOUND_DURABLE_TERMINAL_MUST_SUCCEED",
+          "not_established_by_this_policy": [
+            "ATOMIC_FILESYSTEM_SNAPSHOT",
+            "ARBITRARY_WRITER_EXCLUSION",
+            "INDEPENDENT_COMPLETE_WRITER_CENSUS",
+            "UNCHANGED_PATH_CONTENTS_AFTER_SOURCE_RELEASE"
+          ],
+          "policy": "EXISTING_GUARDS_WITH_OPERATIONAL_QUIESCENCE_ASSUMPTIONS",
+          "schema": "bitcoinvero-source-certification-conditions-v1",
+          "scope": "EXACT_REPORTED_HEIGHT_BLOCK_HASH_AND_INPUT_BINDINGS",
+          "strict_option": "--require-immutable-source",
+          "strict_option_semantics": "Additional existing read-only kernel checks; never enabled automatically."
+        },
+        "status": "CERTIFIED",
+        "subject": {
+          "block_hash": "00000000000000000000014b8c7f91bbf877876ca6b709a3e167a1fa3d42362f",
+          "block_time_status": "NOT_AVAILABLE_IN_THIS_MODE",
+          "block_time_utc": null,
+          "close_count": 3503588291,
+          "core_sha256": "e844b24ea3db81112444b3dd7d7bc26c525afac3d6e6c0ddb69cc0edfd86b0f1",
+          "driver_sha256": "13088c39047206e0e71dcd510100ce9853f81ef941246aa425d39bc520087c3a",
+          "height": 968206,
+          "live_count": 165204813,
+          "live_value_sats": 2008791675380694,
+          "out_count": 3936231162,
+          "script_bytes": 97508179051,
+          "source_sha256": "2e7359db5990c28ef9f05b08e7c089ab161a2ba9ea8eaa7ada1bfa2792f3747e",
+          "state_meta_sha256": "b9d9af0df9d228cb49deb7995c888ac5d6713ca8cb850b5211e1ba459544ae52",
+          "stream_sha256": {
+            "all_outputs_sha256": "e5cfb27a866fc5066df954b5a1ffec7c844d0571be7607e5b75b086495fbec59",
+            "close_stream_sha256": "7e37c985b180cd861edd5383a05dfef7d730710d577fc31236052af2f74fac77",
+            "live_fingerprint_sha256": "4fb4b8e2506d936b88dca40642729346b7a40f96c0b553bf64ee572bdcbe7f36",
+            "tx_stream_sha256": "78f2326e2e33df892338d69ece68a1c7b0b83cb44ac768787f834a0dffc63794"
+          },
+          "tx_count": 1444850128
+        }
+      },
+      "certification_level": "STATE_CONSISTENCY",
+      "certification_status": "CERTIFIED",
+      "certified_at_utc": "2026-11-19T18:52:43.185504+00:00",
+      "completed_at_utc": "2026-11-19T18:52:43.185499+00:00",
+      "engine_evidence": {
+        "path": "/root/mbot/audit-reports/bvstate-r6p3/run.qXpiApdJ/reports/audit_v51_6_0_selected_82901d7f719640979369be9c59f2d413.terminal-receipt.json",
+        "schema": "bitcoinvero-audit-selected-terminal-v1",
+        "sha256": "dce75eaa8bc886d73e48175e6934cd046a60e5ae67faae306deaef8ebadf3dbd"
+      },
+      "engine_return_code": 2,
+      "execution_status": "COMPLETED",
+      "full_certification": false,
+      "general_resume": null,
+      "input_state_at_publication": "NOT_VERIFIED_AFTER_SOURCE_RELEASE",
+      "mode": "state",
+      "return_code": 0,
+      "schema": "bitcoinvero-auditor-result-v2",
+      "source_assurance": {
+        "apply_eligible": false,
+        "byte_immutability": "NOT_ESTABLISHED",
+        "core_correctness": "NOT_EVALUATED",
+        "files": {},
+        "full_certification": false,
+        "kernel_measurements": 0,
+        "mode": "OBSERVATION_ONLY",
+        "payload_bytes_read": 0,
+        "schema": "bitcoinvero-audit-source-assurance-v1",
+        "snapshot_consistency": "NOT_ESTABLISHED",
+        "status": "NOT_ESTABLISHED"
+      },
+      "source_conditions": {
+        "assumptions_independently_verified": false,
+        "certification_conditional_on_assumptions": true,
+        "conditions": [
+          {
+            "id": "COOPERATIVE_WRITER_PROTOCOL",
+            "statement": "All ordinary state writers honor the existing leases throughout audit reads.",
+            "status": "OPERATIONAL_ASSUMPTION"
+          },
+          {
+            "id": "NO_OUT_OF_PROTOCOL_WRITES",
+            "statement": "No direct native, old-version, maintenance or other writer bypasses those leases during audit reads.",
+            "status": "OPERATIONAL_ASSUMPTION"
+          },
+          {
+            "id": "OTHER_INPUTS_STABLE",
+            "statement": "Stage, provenance, evidence and runtime inputs remain stable during their required read intervals; existing identity and content checks still apply.",
+            "status": "OPERATIONAL_ASSUMPTION"
+          }
+        ],
+        "fs_verity_required": false,
+        "guard_requirement": "EXISTING_ENGINE_GUARDS_AND_BOUND_DURABLE_TERMINAL_MUST_SUCCEED",
+        "not_established_by_this_policy": [
+          "ATOMIC_FILESYSTEM_SNAPSHOT",
+          "ARBITRARY_WRITER_EXCLUSION",
+          "INDEPENDENT_COMPLETE_WRITER_CENSUS",
+          "UNCHANGED_PATH_CONTENTS_AFTER_SOURCE_RELEASE"
+        ],
+        "policy": "EXISTING_GUARDS_WITH_OPERATIONAL_QUIESCENCE_ASSUMPTIONS",
+        "schema": "bitcoinvero-source-certification-conditions-v1",
+        "scope": "EXACT_REPORTED_HEIGHT_BLOCK_HASH_AND_INPUT_BINDINGS",
+        "strict_option": "--require-immutable-source",
+        "strict_option_semantics": "Additional existing read-only kernel checks; never enabled automatically."
+      },
+      "source_readset": null,
+      "status": "COMPLETED",
+      "subject": {
+        "block_hash": "00000000000000000000014b8c7f91bbf877876ca6b709a3e167a1fa3d42362f",
+        "block_time_status": "NOT_AVAILABLE_IN_THIS_MODE",
+        "block_time_utc": null,
+        "close_count": 3503588291,
+        "core_sha256": "e844b24ea3db81112444b3dd7d7bc26c525afac3d6e6c0ddb69cc0edfd86b0f1",
+        "driver_sha256": "13088c39047206e0e71dcd510100ce9853f81ef941246aa425d39bc520087c3a",
+        "height": 968206,
+        "live_count": 165204813,
+        "live_value_sats": 2008791675380694,
+        "out_count": 3936231162,
+        "script_bytes": 97508179051,
+        "source_sha256": "2e7359db5990c28ef9f05b08e7c089ab161a2ba9ea8eaa7ada1bfa2792f3747e",
+        "state_meta_sha256": "b9d9af0df9d228cb49deb7995c888ac5d6713ca8cb850b5211e1ba459544ae52",
+        "stream_sha256": {
+          "all_outputs_sha256": "e5cfb27a866fc5066df954b5a1ffec7c844d0571be7607e5b75b086495fbec59",
+          "close_stream_sha256": "7e37c985b180cd861edd5383a05dfef7d730710d577fc31236052af2f74fac77",
+          "live_fingerprint_sha256": "4fb4b8e2506d936b88dca40642729346b7a40f96c0b553bf64ee572bdcbe7f36",
+          "tx_stream_sha256": "78f2326e2e33df892338d69ece68a1c7b0b83cb44ac768787f834a0dffc63794"
+        },
+        "tx_count": 1444850128
+      },
+      "version": "v52-independent-auditor-r12.9"
+    },
+    "schema": "bitcoinvero-utxo-certificate-v1",
+    "sequence": 1,
+    "state_identity": "a11f4cc13a2e4acff27c13e2f866a1e7cafe62b5ad72e853fbfb13fb7d46c656",
+    "terminal_bytes": "{\"acceptance\": \"REQUIRES_MATCHING_DURABLE_STDOUT_ACK_AND_RETURN_CODE\", \"audit_id\": \"82901d7f719640979369be9c59f2d413\", \"certificate_status_by_file_alone\": \"NOT_ASSERTED\", \"result\": \"audit_result_82901d7f719640979369be9c59f2d413.json\", \"result_sha256\": \"57861716564bf67ba500a26ab622174669ff073f48162f294ad0646fd3c10b57\", \"return_code\": 0, \"schema\": \"bitcoinvero-audit-result-terminal-v1\"}\n",
+    "text": "\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\nBITCOINVERO - UTXO STATE CONSISTENCY CERTIFICATE\nSTATE_CONSISTENCY\nCompletion: COMPLETED | Certification: CERTIFIED\nFull history was not independently verified.\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nAUDITED STATE\nNetwork: Bitcoin mainnet\nState after block: 968206 inclusive\nBlock time UTC: UNKNOWN\nLive outputs: 165204813 | Total value: 20087916.75380694 BTC\nBlock hash: 00000000000000000000014b8c7f91bbf877876ca6b709a3e167a1fa3d42362f\nSource: /opt/mybot_data/etl/utxo_v51_new/state\nState identity (SHA-256): a11f4cc13a2e4acff27c13e2f866a1e7cafe62b5ad72e853fbfb13fb7d46c656\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nCOVERAGE AND RESULTS\n[OK] P07 - State consistency\n[OK] P07.26-29 - Fees, rewards and calculation coverage\n[NOT_EVALUATED] P15 - Independent Stage \u2192 UTXO comparison\n[NOT_EVALUATED] P15.14-16 - Independent fee and reward comparison\n[NOT_EVALUATED] P12 - Independent Bitcoin Core \u2192 Stage comparison\nRequired checks: 3/3\nExclusion: Independent history not evaluated in STATE_CONSISTENCY mode.\nSource policy: EXISTING_GUARDS_WITH_OPERATIONAL_QUIESCENCE_ASSUMPTIONS\nSource condition: All ordinary state writers honor the existing leases throughout audit reads.\nSource condition: No direct native, old-version, maintenance or other writer bypasses those leases during audit reads.\nSource condition: Stage, provenance, evidence and runtime inputs remain stable during their required read intervals; existing identity and content checks still apply.\nOperational assumptions are not independently verified.\nComplete check inventory and calculator/core/driver pins: see bound report.\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nAUDIT RECORD\nCertificate: BV-STATE-968206-82901d7f719640979369be9c59f2d413\nAudit ID: 82901d7f719640979369be9c59f2d413\nStarted UTC: 2026-11-15T21:24:08.265821+00:00\nFinished UTC: 2026-11-19T18:52:43.185543+00:00\nDuration: 336514.91971645004 seconds\nAuditor: v52-independent-auditor-r12.9\nAuditor SHA-256: 1d3dac124b91f7cfaaa05dcc206cb3d4539c3f112ca6cd8421fdebcc12b336f4\nCalculator: See bound report (exact pinned calculator)\nPrevious certificate at a lower height: none registered\nPrevious audit of this state: none registered\nReport: /root/mbot/audit-reports/bvstate-r6p3/run.qXpiApdJ/reports/audit_result_82901d7f719640979369be9c59f2d413.json\nReport SHA-256: 57861716564bf67ba500a26ab622174669ff073f48162f294ad0646fd3c10b57\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nApplies only to the identified audited UTXO state.\nSubsequent changes are not covered.\nA later height does not certify every earlier historical UTXO composition.\nSHA-256 provides integrity checking, not a digital signature.\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n",
+    "trust": "OWNED_PROCESS_EXIT_OBSERVATION; SHA_IS_NOT_A_SIGNATURE; OPERATIONAL_SOURCE_ASSUMPTIONS_APPLY"
+  },
+  "kind": "CERTIFICATE",
+  "previous_event_sha256": null,
+  "schema": "bitcoinvero-certificate-registry-event-v1",
+  "sequence": 1
+}

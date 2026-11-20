@@ -1,0 +1,182 @@
+{
+  "acceptance": "REQUIRES_MATCHING_DURABLE_STDOUT_ACK_AND_RETURN_CODE",
+  "apply_eligible": false,
+  "audit_id": "82901d7f719640979369be9c59f2d413",
+  "auditor_sha256": "1d3dac124b91f7cfaaa05dcc206cb3d4539c3f112ca6cd8421fdebcc12b336f4",
+  "certificate_details": {
+    "calculator": "See bound report (exact pinned calculator)",
+    "completed_required_checks": 3,
+    "coverage_rows": {
+      "P07": "OK",
+      "P07.26-29": "OK",
+      "P12": "NOT_EVALUATED",
+      "P15": "NOT_EVALUATED",
+      "P15.14-16": "NOT_EVALUATED"
+    },
+    "duration_seconds": 336514.91971645004,
+    "exclusions": [
+      "Independent history not evaluated in STATE_CONSISTENCY mode."
+    ],
+    "finished_utc": "2026-11-19T18:52:43.185543+00:00",
+    "inventory": "See bound engine report; summary is not the complete check inventory.",
+    "network": "Bitcoin mainnet",
+    "network_basis": "PINNED_CALCULATOR_CONTRACT; NOT_A_NEW_NETWORK_QUERY",
+    "required_checks": 3,
+    "source_path": "/opt/mybot_data/etl/utxo_v51_new/state",
+    "started_utc": "2026-11-15T21:24:08.265821+00:00"
+  },
+  "certification": {
+    "does_not_prove": [
+      "BITCOIN_HISTORY_OR_CANONICAL_COIN_SET"
+    ],
+    "level": "STATE_CONSISTENCY",
+    "reasons": [],
+    "scope": "INTERNAL_STATE_CONSISTENCY_ONLY",
+    "source_conditions": {
+      "assumptions_independently_verified": false,
+      "certification_conditional_on_assumptions": true,
+      "conditions": [
+        {
+          "id": "COOPERATIVE_WRITER_PROTOCOL",
+          "statement": "All ordinary state writers honor the existing leases throughout audit reads.",
+          "status": "OPERATIONAL_ASSUMPTION"
+        },
+        {
+          "id": "NO_OUT_OF_PROTOCOL_WRITES",
+          "statement": "No direct native, old-version, maintenance or other writer bypasses those leases during audit reads.",
+          "status": "OPERATIONAL_ASSUMPTION"
+        },
+        {
+          "id": "OTHER_INPUTS_STABLE",
+          "statement": "Stage, provenance, evidence and runtime inputs remain stable during their required read intervals; existing identity and content checks still apply.",
+          "status": "OPERATIONAL_ASSUMPTION"
+        }
+      ],
+      "fs_verity_required": false,
+      "guard_requirement": "EXISTING_ENGINE_GUARDS_AND_BOUND_DURABLE_TERMINAL_MUST_SUCCEED",
+      "not_established_by_this_policy": [
+        "ATOMIC_FILESYSTEM_SNAPSHOT",
+        "ARBITRARY_WRITER_EXCLUSION",
+        "INDEPENDENT_COMPLETE_WRITER_CENSUS",
+        "UNCHANGED_PATH_CONTENTS_AFTER_SOURCE_RELEASE"
+      ],
+      "policy": "EXISTING_GUARDS_WITH_OPERATIONAL_QUIESCENCE_ASSUMPTIONS",
+      "schema": "bitcoinvero-source-certification-conditions-v1",
+      "scope": "EXACT_REPORTED_HEIGHT_BLOCK_HASH_AND_INPUT_BINDINGS",
+      "strict_option": "--require-immutable-source",
+      "strict_option_semantics": "Additional existing read-only kernel checks; never enabled automatically."
+    },
+    "status": "CERTIFIED",
+    "subject": {
+      "block_hash": "00000000000000000000014b8c7f91bbf877876ca6b709a3e167a1fa3d42362f",
+      "block_time_status": "NOT_AVAILABLE_IN_THIS_MODE",
+      "block_time_utc": null,
+      "close_count": 3503588291,
+      "core_sha256": "e844b24ea3db81112444b3dd7d7bc26c525afac3d6e6c0ddb69cc0edfd86b0f1",
+      "driver_sha256": "13088c39047206e0e71dcd510100ce9853f81ef941246aa425d39bc520087c3a",
+      "height": 968206,
+      "live_count": 165204813,
+      "live_value_sats": 2008791675380694,
+      "out_count": 3936231162,
+      "script_bytes": 97508179051,
+      "source_sha256": "2e7359db5990c28ef9f05b08e7c089ab161a2ba9ea8eaa7ada1bfa2792f3747e",
+      "state_meta_sha256": "b9d9af0df9d228cb49deb7995c888ac5d6713ca8cb850b5211e1ba459544ae52",
+      "stream_sha256": {
+        "all_outputs_sha256": "e5cfb27a866fc5066df954b5a1ffec7c844d0571be7607e5b75b086495fbec59",
+        "close_stream_sha256": "7e37c985b180cd861edd5383a05dfef7d730710d577fc31236052af2f74fac77",
+        "live_fingerprint_sha256": "4fb4b8e2506d936b88dca40642729346b7a40f96c0b553bf64ee572bdcbe7f36",
+        "tx_stream_sha256": "78f2326e2e33df892338d69ece68a1c7b0b83cb44ac768787f834a0dffc63794"
+      },
+      "tx_count": 1444850128
+    }
+  },
+  "certification_level": "STATE_CONSISTENCY",
+  "certification_status": "CERTIFIED",
+  "certified_at_utc": "2026-11-19T18:52:43.185504+00:00",
+  "completed_at_utc": "2026-11-19T18:52:43.185499+00:00",
+  "engine_evidence": {
+    "path": "/root/mbot/audit-reports/bvstate-r6p3/run.qXpiApdJ/reports/audit_v51_6_0_selected_82901d7f719640979369be9c59f2d413.terminal-receipt.json",
+    "schema": "bitcoinvero-audit-selected-terminal-v1",
+    "sha256": "dce75eaa8bc886d73e48175e6934cd046a60e5ae67faae306deaef8ebadf3dbd"
+  },
+  "engine_return_code": 2,
+  "execution_status": "COMPLETED",
+  "full_certification": false,
+  "general_resume": null,
+  "input_state_at_publication": "NOT_VERIFIED_AFTER_SOURCE_RELEASE",
+  "mode": "state",
+  "return_code": 0,
+  "schema": "bitcoinvero-auditor-result-v2",
+  "source_assurance": {
+    "apply_eligible": false,
+    "byte_immutability": "NOT_ESTABLISHED",
+    "core_correctness": "NOT_EVALUATED",
+    "files": {},
+    "full_certification": false,
+    "kernel_measurements": 0,
+    "mode": "OBSERVATION_ONLY",
+    "payload_bytes_read": 0,
+    "schema": "bitcoinvero-audit-source-assurance-v1",
+    "snapshot_consistency": "NOT_ESTABLISHED",
+    "status": "NOT_ESTABLISHED"
+  },
+  "source_conditions": {
+    "assumptions_independently_verified": false,
+    "certification_conditional_on_assumptions": true,
+    "conditions": [
+      {
+        "id": "COOPERATIVE_WRITER_PROTOCOL",
+        "statement": "All ordinary state writers honor the existing leases throughout audit reads.",
+        "status": "OPERATIONAL_ASSUMPTION"
+      },
+      {
+        "id": "NO_OUT_OF_PROTOCOL_WRITES",
+        "statement": "No direct native, old-version, maintenance or other writer bypasses those leases during audit reads.",
+        "status": "OPERATIONAL_ASSUMPTION"
+      },
+      {
+        "id": "OTHER_INPUTS_STABLE",
+        "statement": "Stage, provenance, evidence and runtime inputs remain stable during their required read intervals; existing identity and content checks still apply.",
+        "status": "OPERATIONAL_ASSUMPTION"
+      }
+    ],
+    "fs_verity_required": false,
+    "guard_requirement": "EXISTING_ENGINE_GUARDS_AND_BOUND_DURABLE_TERMINAL_MUST_SUCCEED",
+    "not_established_by_this_policy": [
+      "ATOMIC_FILESYSTEM_SNAPSHOT",
+      "ARBITRARY_WRITER_EXCLUSION",
+      "INDEPENDENT_COMPLETE_WRITER_CENSUS",
+      "UNCHANGED_PATH_CONTENTS_AFTER_SOURCE_RELEASE"
+    ],
+    "policy": "EXISTING_GUARDS_WITH_OPERATIONAL_QUIESCENCE_ASSUMPTIONS",
+    "schema": "bitcoinvero-source-certification-conditions-v1",
+    "scope": "EXACT_REPORTED_HEIGHT_BLOCK_HASH_AND_INPUT_BINDINGS",
+    "strict_option": "--require-immutable-source",
+    "strict_option_semantics": "Additional existing read-only kernel checks; never enabled automatically."
+  },
+  "source_readset": null,
+  "status": "COMPLETED",
+  "subject": {
+    "block_hash": "00000000000000000000014b8c7f91bbf877876ca6b709a3e167a1fa3d42362f",
+    "block_time_status": "NOT_AVAILABLE_IN_THIS_MODE",
+    "block_time_utc": null,
+    "close_count": 3503588291,
+    "core_sha256": "e844b24ea3db81112444b3dd7d7bc26c525afac3d6e6c0ddb69cc0edfd86b0f1",
+    "driver_sha256": "13088c39047206e0e71dcd510100ce9853f81ef941246aa425d39bc520087c3a",
+    "height": 968206,
+    "live_count": 165204813,
+    "live_value_sats": 2008791675380694,
+    "out_count": 3936231162,
+    "script_bytes": 97508179051,
+    "source_sha256": "2e7359db5990c28ef9f05b08e7c089ab161a2ba9ea8eaa7ada1bfa2792f3747e",
+    "state_meta_sha256": "b9d9af0df9d228cb49deb7995c888ac5d6713ca8cb850b5211e1ba459544ae52",
+    "stream_sha256": {
+      "all_outputs_sha256": "e5cfb27a866fc5066df954b5a1ffec7c844d0571be7607e5b75b086495fbec59",
+      "close_stream_sha256": "7e37c985b180cd861edd5383a05dfef7d730710d577fc31236052af2f74fac77",
+      "live_fingerprint_sha256": "4fb4b8e2506d936b88dca40642729346b7a40f96c0b553bf64ee572bdcbe7f36",
+      "tx_stream_sha256": "78f2326e2e33df892338d69ece68a1c7b0b83cb44ac768787f834a0dffc63794"
+    },
+    "tx_count": 1444850128
+  },
+  "version": "v52-independent-auditor-r12.9"
+}

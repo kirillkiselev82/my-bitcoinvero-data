@@ -1,0 +1,72 @@
+{
+  "bitcoin_core_rpc_block_data_requeried_by_reviewer": false,
+  "headers": {
+    "continuous": true,
+    "count": 501,
+    "from_block_hash": "00000000000000001866fcc86548d0ce02980c5cafbebef31de3601c0ea043df",
+    "heights": "328650-329150",
+    "reversal_from_height": 328875,
+    "reversal_to_height": 328876,
+    "seconds_backwards": 348,
+    "to_block_hash": "000000000000000014957e9e22643209571d7e0519f0491d85614f3644c6eff6",
+    "utc_date_reversals": 1
+  },
+  "limitations": [
+    "Operator-provided RPC-derived CSV/reports were checked offline; no new Bitcoin Core RPC was executed.",
+    "The export lacks full raw Bitcoin blocks, scripts and merkle proofs. Output eligibility flags were verified as present, not independently reconstructed from scriptPubKey.",
+    "The proof explains the two-day metric difference under the exact pinned code policy, not an independent historical audit of all BitcoinVero data."
+  ],
+  "matching_outpoints": {
+    "all_operator_eligibility_flags_true": true,
+    "count": 9,
+    "difference_sats": 0,
+    "distinct_spending_txids": 6,
+    "expected_value_sats": 1089538263160,
+    "unique_created_outpoints": 9,
+    "value_sats": 1089538263160
+  },
+  "producer_code_sha256": "65810f7a3521e22dceff7185b7726134dc268bd7d4e615ff7eaaa8a18c5cf249",
+  "producer_identity_matches": true,
+  "producer_manifest_metrics_code_sha256": "65810f7a3521e22dceff7185b7726134dc268bd7d4e615ff7eaaa8a18c5cf249",
+  "schema": "bitcoinvero-calendar-inversion-validation-v1",
+  "scope": "OFFLINE_VALIDATION_OF_OPERATOR_PROVIDED_BITCOIN_CORE_RPC_EXPORTS_AND_V2_METRICS_CSV",
+  "source_operator_archive_sha256": "6fbe707451f245c1499e93e289f2d78f1c3a96cf63a2a6529fd8a5b88da616d9",
+  "status": "PASS",
+  "v2_csv_sha256": {
+    "utxo_closed_btc.csv": "591f5f32bcc4d136d421e3b0698ccda76eadbecc4fabd16f496c40b665685af7",
+    "utxo_created_btc.csv": "ed9fbe245351000b1cd2c26a9b96b2f4037a21d182d8d9fc33d5319dbe55bc5c",
+    "utxo_spent_btc.csv": "b90b1cee64bec74ca2ba9b991e5864ef77d44d39e75f521e82216448128af10c",
+    "utxo_supply_btc.csv": "88c49d24ece549a7b248b2aa5ba6a6f596783a12a39f1d679baa73f5f9f6e581"
+  },
+  "v2_metrics": {
+    "2014-11-05": {
+      "closed_btc": "955136.36540753",
+      "closed_minus_spent_btc": "0E-8",
+      "created_btc": "958586.36540753",
+      "spent_btc": "955136.36540753",
+      "supply_delta_btc": "3450.00000000"
+    },
+    "2014-11-06": {
+      "closed_btc": "741050.58817849",
+      "closed_minus_spent_btc": "-10895.38263160",
+      "created_btc": "755795.97081008",
+      "spent_btc": "751945.97081009",
+      "supply_delta_btc": "14745.38263159"
+    },
+    "2014-11-07": {
+      "closed_btc": "866668.53262377",
+      "closed_minus_spent_btc": "10895.38263160",
+      "created_btc": "859523.14999217",
+      "spent_btc": "855773.14999217",
+      "supply_delta_btc": "-7145.38263160"
+    },
+    "2014-11-08": {
+      "closed_btc": "562525.1301227",
+      "closed_minus_spent_btc": "0E-7",
+      "created_btc": "566350.1301227",
+      "spent_btc": "562525.1301227",
+      "supply_delta_btc": "3825.00000000"
+    }
+  },
+  "verified_utc": "2026-11-20T22:03:41+00:00"
+}
