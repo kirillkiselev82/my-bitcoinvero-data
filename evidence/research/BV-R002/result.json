@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "scope": "timestamp-inverted normal spends, two anchored chain prefixes; not a full independent UTXO audit",
+  "anchors": {
+    "617698": "000000000000000000095ad21001856998971c4951123d14276b5f13c45e83d8",
+    "968206": "00000000000000000000014b8c7f91bbf877876ca6b709a3e167a1fa3d42362f"
+  },
+  "source_code_sha256": [
+    "1bbed0fcbbd0872a127e3ad99c1a5a326340d071f08d8eda632557317dc04dc1",
+    "65810f7a3521e22dceff7185b7726134dc268bd7d4e615ff7eaaa8a18c5cf249"
+  ],
+  "headers_sha256": "54afb538ca83ac6271b29b72103ec22d22b1fe6fb573520e53315a68fedc58e0",
+  "headers_count": 968207,
+  "candidate_spend_blocks": 72,
+  "clamped_v1": 1169,
+  "clamped_v2": 1331,
+  "expected_counts": [
+    1169,
+    1331
+  ],
+  "mismatching_dates": 0,
+  "daily_comparisons": 4061,
+  "outpoints_v1_gross_sats": 2408421374030,
+  "outpoints_sha256": "1e3523d780d5182b0012e891b82bdbe46802ccea1b868e666191f85e13fd5e7e",
+  "daily_check_sha256": "08b3497668d75c079d9ab54e75774414eaf8154b554d72494c5e16e53a378106"
+}

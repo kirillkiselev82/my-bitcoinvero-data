@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "headers": 968207,
+  "blocks": 111,
+  "transactions": 30468,
+  "candidate_spend_blocks": 72,
+  "matched_outpoints_v1": 1169,
+  "matched_outpoints_v2": 1331,
+  "daily_comparisons": 4061,
+  "changed_dates": 43,
+  "mismatching_dates": 0,
+  "gross_sats": 2408421374030,
+  "positive_net_sats": 2407702250364,
+  "positive_net_inputs": 1164,
+  "archive_sha256": "25b472325271032e76fa8e8b44bf56f6767aa2689a4ca14a9075af2739e9063e"
+}
