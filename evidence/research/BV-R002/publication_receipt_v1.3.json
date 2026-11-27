@@ -1,0 +1,40 @@
+{
+  "research_id": "BV-R002",
+  "package_version": "1.3.0",
+  "publication_status": "PUBLISHED_OPERATOR_VERIFIED",
+  "supersedes_status_in": "package_manifest_v1.3.json (historical pre-upload manifest, retained)",
+  "archive": {
+    "url": "https://gitlab.com/api/v4/projects/87308878/packages/generic/bv-r002-evidence/1.3.0/BV-R002_evidence_pack_v1.3.zip",
+    "size_bytes": 76112818,
+    "sha256": "c4cced6494d1e620f379c2f65a010bcc31879a08e6eed08a885f4d518b81c644"
+  },
+  "checksum": {
+    "url": "https://gitlab.com/api/v4/projects/87308878/packages/generic/bv-r002-evidence/1.3.0/BV-R002_evidence_pack_v1.3.zip.sha256",
+    "sha256": "25bd4ebc6378d019a812a980e83e82d0837c071ca028c1c15d31c63dfb781c20"
+  },
+  "verification": {
+    "source": "Operator-supplied terminal transcript of BV-R002_publish_v1.3.sh; not an independent network check by the article editor.",
+    "upload_http_status": [
+      201,
+      201
+    ],
+    "anonymous_download": "PASS",
+    "byte_identity": "PASS",
+    "manifest_files": 136,
+    "unit_tests_passed": 5,
+    "offline_replay": "PASS",
+    "headers": 968207,
+    "blocks": 111,
+    "transactions": 30468,
+    "candidate_spend_blocks": 72,
+    "matched_outpoints_v1": 1169,
+    "matched_outpoints_v2": 1331,
+    "daily_comparisons": 4061,
+    "changed_dates": 43,
+    "mismatching_dates": 0,
+    "gross_sats": 2408421374030,
+    "positive_net_sats": 2407702250364,
+    "positive_net_inputs": 1164
+  },
+  "scope": "Offline numerical and raw-block reproduction; producer source bytes excluded; same original node; not a full consensus or UTXO audit."
+}
