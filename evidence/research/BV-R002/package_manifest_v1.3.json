@@ -1,0 +1,27 @@
+{
+  "research_id": "BV-R002",
+  "evidence_version": "1.3",
+  "package_name": "bv-r002-evidence",
+  "package_version": "1.3.0",
+  "publication_status": "PREPARED_NOT_UPLOADED",
+  "artifacts": [
+    {
+      "filename": "BV-R002_evidence_pack_v1.3.zip",
+      "size_bytes": 76112818,
+      "sha256": "c4cced6494d1e620f379c2f65a010bcc31879a08e6eed08a885f4d518b81c644",
+      "planned_url": "https://gitlab.com/api/v4/projects/87308878/packages/generic/bv-r002-evidence/1.3.0/BV-R002_evidence_pack_v1.3.zip"
+    },
+    {
+      "filename": "BV-R002_evidence_pack_v1.3.zip.sha256",
+      "size_bytes": 97,
+      "sha256": "25bd4ebc6378d019a812a980e83e82d0837c071ca028c1c15d31c63dfb781c20",
+      "planned_url": "https://gitlab.com/api/v4/projects/87308878/packages/generic/bv-r002-evidence/1.3.0/BV-R002_evidence_pack_v1.3.zip.sha256"
+    }
+  ],
+  "verification": {
+    "local_offline_replay": "PASS",
+    "anonymous_download": "NOT_EVALUATED",
+    "downloaded_offline_replay": "NOT_EVALUATED"
+  },
+  "scope": "Public numerical and raw-block replay on data from one Bitcoin Core node; producer source bytes excluded; not a full consensus or UTXO audit."
+}
